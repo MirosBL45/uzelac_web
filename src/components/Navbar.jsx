@@ -14,6 +14,7 @@ function Navbar() {
       className={`${styles.paddingX} w-full flex items-center py-5 fixed top-0 z-20 bg-primary`}
     >
       <div className="w-full flex justify-between items-center max-w-7xl mx-auto">
+        {/* logo with link to back home */}
         <Link
           className="flex items-center gap-2"
           to={'/'}
@@ -24,9 +25,10 @@ function Navbar() {
         >
           <img src={logo} alt="logo" className="w-9 h-9 object-contain" />
           <p className="text-white text-[18px] font-bold cursor-pointer">
-            Adrian <span className="sm:inline-block hidden">| JS Mastery</span>
+            Mickey <span className="sm:inline-block hidden">| JS Mastery</span>
           </p>
         </Link>
+        {/* list of links on page */}
         <ul className="list-none hidden sm:flex flex-row gap-10">
           {navLinks.map((link) => (
             <li
@@ -40,7 +42,7 @@ function Navbar() {
             </li>
           ))}
         </ul>
-
+        {/* for mobile device list of links on page */}
         <div className="sm:hidden flex flex-1 justify-end items-center">
           <img
             src={toggle ? close : menu}
