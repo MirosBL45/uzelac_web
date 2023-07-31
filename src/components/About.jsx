@@ -1,9 +1,19 @@
-import React from 'react'
+import { Tilt } from 'react-tilt';
+import { motion } from 'framer-motion';
 
-const About = () => {
+import { styles } from '../styles';
+import { services } from '../constants';
+import { fadeIn, textVariant } from '../utils/motion';
+
+function About() {
   return (
-    <div>About</div>
-  )
+    <section className={`${styles.paddingX}`}>
+      <motion.div>
+        <p className={styles.sectionSubText}>Introduction</p>
+        <h2 className={styles.sectionHeadText}>Overview.</h2>
+      </motion.div>
+    </section>
+  );
 }
 
-export default About
+export default About;
