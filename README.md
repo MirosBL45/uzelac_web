@@ -13,3 +13,7 @@ Framer Motion - the most popular library used to bring your React website to lif
 1) npm install
 2) npm run dev
 3) If got error for THREE run this: npm install --legacy-peer-deps three
+
+This was in git ignore:
+.vscode/*
+!.vscode/extensions.json
