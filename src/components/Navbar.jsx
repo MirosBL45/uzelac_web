@@ -1,12 +1,12 @@
-import { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { useState } from "react";
+import { Link } from "react-router-dom";
 
-import { styles } from '../styles';
-import { navLinks } from '../constants';
-import { logo, menu, close } from '../assets';
+import { styles } from "../styles";
+import { navLinks } from "../constants";
+import { logo, menu, close } from "../assets";
 
 function Navbar() {
-  const [active, setActive] = useState('');
+  const [active, setActive] = useState("");
   const [toggle, setToggle] = useState(false);
 
   return (
@@ -17,9 +17,9 @@ function Navbar() {
         {/* logo with link to back home */}
         <Link
           className="flex items-center gap-2"
-          to={'/'}
+          to={"/"}
           onClick={() => {
-            setActive('');
+            setActive("");
             window.scrollTo(0, 0);
           }}
         >
@@ -35,8 +35,12 @@ function Navbar() {
               onClick={() => setActive(link.title)}
               key={link.id}
               className={`${
-                active === link.title ? 'text-white' : 'text-secondary'
-              } hover:text-white text-[18px] font-medium cursor-pointer`}
+                link.title === "Contact"
+                  ? "bg-[#915eff] text-[#f5af19] rounded-2xl px-5 py-2"
+                  : ""
+              } ${
+                active === link.title ? "text-white" : "text-secondary"
+              } hover:text-white text-[18px] font-medium cursor-pointer flex justify-center items-center`}
             >
               <a href={`#${link.id}`}>{link.title}</a>
             </li>
@@ -53,10 +57,10 @@ function Navbar() {
 
           <div
             className={`${
-              !toggle ? 'hidden' : 'flex'
-            } p-6 black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl`}
+              !toggle ? "hidden" : "flex"
+            } p-6 black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[240px] z-10 rounded-xl`}
           >
-            <ul className="list-none flex justify-end items-start flex-col gap-4">
+            <ul className="list-none flex justify-end items-start flex-col gap-6">
               {navLinks.map((link) => (
                 <li
                   onClick={() => {
@@ -65,8 +69,12 @@ function Navbar() {
                   }}
                   key={link.id}
                   className={`${
-                    active === link.title ? 'text-white' : 'text-secondary'
-                  } hover:text-white font-popins text-[16px] font-medium cursor-pointer`}
+                    active === link.title ? "text-white" : "text-secondary"
+                  } ${
+                    link.title === "Contact"
+                      ? "bg-[#915eff] text-[#f5af19] rounded-2xl px-5 py-2"
+                      : ""
+                  } hover:text-white font-popins text-[20px] font-medium cursor-pointer`}
                 >
                   <a href={`#${link.id}`}>{link.title}</a>
                 </li>
