@@ -11,8 +11,11 @@ import {
   Works,
   StarsCanvas,
 } from './components';
+import React, { useState } from 'react';
 
 function App() {
+  const [language, setLanguage] = useState(1);
+
   return (
     <BrowserRouter>
       <div className="relative z-0 bg-primary">
@@ -21,7 +24,7 @@ function App() {
           <Hero />
         </div>
         <About />
-        <Experience />
+        <Experience language={language} />
         <Tech />
         <Works />
         <Feedbacks />
