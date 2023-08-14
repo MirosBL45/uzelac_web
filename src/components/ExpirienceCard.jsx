@@ -1,15 +1,6 @@
-import {
-  VerticalTimeline,
-  VerticalTimelineElement,
-} from "react-vertical-timeline-component";
-import { motion } from "framer-motion";
+import { VerticalTimelineElement } from "react-vertical-timeline-component";
 
 import "react-vertical-timeline-component/style.min.css";
-
-import { styles } from "../styles";
-import { experiences, experiencesSR } from "../constants";
-import { SectionWrapper } from "../hoc";
-import { textVariant } from "../utils/motion";
 
 function ExpirienceCard({ experience }) {
   return (
@@ -51,4 +42,4 @@ function ExpirienceCard({ experience }) {
   );
 }
 
-export default ExpirienceCard
+export default ExpirienceCard;

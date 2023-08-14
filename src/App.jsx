@@ -12,6 +12,7 @@ import {
   StarsCanvas,
 } from './components';
 import React, { useState } from 'react';
+// import Experience from './components/Experience';
 
 function App() {
   const [language, setLanguage] = useState(1);
@@ -24,7 +25,7 @@ function App() {
           <Hero />
         </div>
         <About />
-        <Experience language={language} />
+        <Experience setLanguage={setLanguage} language={language} />
         <Tech />
         <Works />
         <Feedbacks />
