@@ -16,10 +16,10 @@ function Experience({ language, setLanguage }) {
       <motion.div variants={textVariant()}>
         <p
           onClick={() => {
-            if (language === 1) {
-              setLanguage(2);
+            if (language === 'eng') {
+              setLanguage('srb');
             } else {
-              setLanguage(1);
+              setLanguage('eng');
             }
           }}
           className={styles.sectionSubText}
@@ -31,7 +31,7 @@ function Experience({ language, setLanguage }) {
       {/* cards of experiences, ExpirienceCard is defined up in code */}
       <div className="mt-20 flex flex-col">
         <VerticalTimeline>
-          {language === 1
+          {language === 'eng'
             ? experiences
                 .slice()
                 .reverse()

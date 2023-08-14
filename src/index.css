@@ -13,6 +13,24 @@
   color-scheme: dark;
 }
 
+@media only screen and (max-width: 650px) {
+  .mobileContainer {
+    display: none;
+  }
+
+  .onMobile {
+    position: absolute;
+    transform: translateY(60vh);
+    padding: 0 50px;
+  }
+}
+
+@media only screen and (min-width: 650px) {
+  .onMobile {
+    display: none;
+  }
+}
+
 .hash-span {
   margin-top: -100px;
   padding-bottom: 100px;

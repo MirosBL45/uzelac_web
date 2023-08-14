@@ -1,7 +1,8 @@
-import { motion } from 'framer-motion';
+import { motion } from "framer-motion";
 
-import { styles } from '../styles';
-import { ComputersCanvas } from './canvas';
+import { styles } from "../styles";
+import { ComputersCanvas } from "./canvas";
+import danceArena from '../assets/images/dance_arena.png'
 
 function Hero() {
   return (
@@ -20,14 +21,17 @@ function Hero() {
             Hi, I'm <span className="text-[#915eff]">Mickey</span>
           </h1>
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-            I develop 3D visuals, user <br className="sm:block hidden" />{' '}
+            I develop 3D visuals, user <br className="sm:block hidden" />{" "}
             interfaces and web applications
           </p>
         </div>
       </div>
       <ComputersCanvas />
+      <div className="onMobile">
+        <img src={danceArena} alt="danceArena" />
+      </div>
       {/* scroll div */}
-      <div className="absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center">
+      <div className="absolute xs:bottom-10 bottom-[10px] w-full flex justify-center items-center">
         <a href="#about">
           <div className="border-4 w-[35px] h-[64px] rounded-3xl border-secondary flex justify-center items-start p-2">
             <motion.div
@@ -36,7 +40,7 @@ function Hero() {
               transition={{
                 duration: 1.5,
                 repeat: Infinity,
-                repeatType: 'loop',
+                repeatType: "loop",
               }}
             />
           </div>

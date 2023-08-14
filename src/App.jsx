@@ -15,7 +15,7 @@ import React, { useState } from 'react';
 // import Experience from './components/Experience';
 
 function App() {
-  const [language, setLanguage] = useState(1);
+  const [language, setLanguage] = useState('eng');
 
   return (
     <BrowserRouter>

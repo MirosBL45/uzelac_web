@@ -49,7 +49,7 @@ function ComputersCanvas() {
 
   return (
     <Canvas
-      className="cursor-pointer"
+      className="cursor-pointer mobileContainer"
       frameloop="demand"
       shadows
       camera={{ position: [20, 3, 5], fov: 25 }}
