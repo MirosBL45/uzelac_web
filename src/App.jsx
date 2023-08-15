@@ -21,16 +21,16 @@ function App() {
     <BrowserRouter>
       <div className="relative z-0 bg-primary">
         <div className="bg-hero-pattern bg-cover bg-no-repeat bg-center">
-          <Navbar />
+          <Navbar setLanguage={setLanguage} language={language} />
           <Hero />
         </div>
         <About />
-        <Experience setLanguage={setLanguage} language={language} />
+        <Experience language={language} />
         <Tech />
         <Works />
         <Feedbacks />
         <div className="relative z-0">
-          <Contact />
+          <Contact language={language} />
           <StarsCanvas />
         </div>
       </div>

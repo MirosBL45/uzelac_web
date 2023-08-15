@@ -9,29 +9,18 @@ import { SectionWrapper } from "../hoc";
 import { textVariant } from "../utils/motion";
 import ExpirienceCard from "./ExpirienceCard";
 
-function Experience({ language, setLanguage }) {
+function Experience({ language }) {
   return (
     <>
       {/* headlines */}
       <motion.div variants={textVariant()}>
-        <p
-          onClick={() => {
-            if (language === 'eng') {
-              setLanguage('srb');
-            } else {
-              setLanguage('eng');
-            }
-          }}
-          className={styles.sectionSubText}
-        >
-          What I have done so far
-        </p>
+        <p className={styles.sectionSubText}>What I have done so far</p>
         <h2 className={styles.sectionHeadText}>Work Experience.</h2>
       </motion.div>
       {/* cards of experiences, ExpirienceCard is defined up in code */}
       <div className="mt-20 flex flex-col">
         <VerticalTimeline>
-          {language === 'eng'
+          {language === "eng"
             ? experiences
                 .slice()
                 .reverse()

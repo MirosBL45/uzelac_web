@@ -40,6 +40,21 @@ export const navLinks = [
     },
 ];
 
+export const navLinksSR = [
+    {
+        id: "about",
+        title: "O Meni",
+    },
+    {
+        id: "work",
+        title: "Moj Rad",
+    },
+    {
+        id: "contact",
+        title: "Kontakt",
+    },
+];
+
 const services = [
     {
         title: "Web Developer",

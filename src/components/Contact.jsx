@@ -7,7 +7,7 @@ import { EarthCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
 
-function Contact() {
+function Contact({ language }) {
   const formRef = useRef();
   const [form, setForm] = useState({
     name: "",
@@ -25,8 +25,12 @@ function Contact() {
         variants={slideIn("left", "tween", 0.2, 1)}
         className="flex-[0.75] bg-black-100 p-8 rounded-2xl"
       >
-        <p className={styles.sectionSubText}>Get in touch</p>
-        <h3 className={styles.sectionHeadText}>Contact.</h3>
+        <p className={styles.sectionSubText}>
+          {language === "eng" ? "Get in touch" : "Budimo u kontaktu"}
+        </p>
+        <h3 className={styles.sectionHeadText}>
+          {language === "eng" ? "Contact" : "Kontakt"}.
+        </h3>
         {/* form for contact */}
         <form
           className="mt-12 flex flex-col gap-8"
@@ -34,7 +38,9 @@ function Contact() {
           onSubmit={handleSubmit}
         >
           <label className="flex flex-col">
-            <span className="text-white font-medium mb-4">Your Name</span>
+            <span className="text-white font-medium mb-4">
+              {language === "eng" ? "Your Name" : "Vaše Ime"}
+            </span>
             <input
               type="text"
               name="name"
@@ -45,7 +51,9 @@ function Contact() {
             />
           </label>
           <label className="flex flex-col">
-            <span className="text-white font-medium mb-4">Your Email</span>
+            <span className="text-white font-medium mb-4">
+              {language === "eng" ? "Your Email" : "Vaš Email"}
+            </span>
             <input
               type="email"
               name="email"
@@ -56,7 +64,7 @@ function Contact() {
             />
           </label>
           <label className="flex flex-col">
-            <span className="text-white font-medium mb-4">Your Message</span>
+            <span className="text-white font-medium mb-4">{language === "eng" ? "Your Message" : "Vaša Poruka"}</span>
             <textarea
               rows={7}
               name="message"

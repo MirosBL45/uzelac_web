@@ -1,8 +1,7 @@
 import { BallCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
 import { technologies } from "../constants";
-import { useState } from "react";
-import { useEffect } from "react";
+import { useState, useEffect } from "react";
 
 function Tech() {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
