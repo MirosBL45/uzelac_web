@@ -20,7 +20,7 @@
 
   .onMobile {
     position: absolute;
-    transform: translateY(60vh);
+    transform: translateY(50vh);
     padding: 0 50px;
   }
 }
