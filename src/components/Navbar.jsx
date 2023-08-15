@@ -25,7 +25,7 @@ function Navbar() {
         >
           <img src={logo} alt="logo" className="w-9 h-9 object-contain" />
           <p className="text-white text-[18px] font-bold cursor-pointer">
-            Mickey <span className="sm:inline-block hidden">| JS Mastery</span>
+            Uzelac <span className="sm:inline-block hidden">| Light</span>
           </p>
         </Link>
         {/* list of links on page */}

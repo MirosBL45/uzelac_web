@@ -18,11 +18,11 @@ function Hero() {
         {/* text with description about that specific man */}
         <div>
           <h1 className={`${styles.heroHeadText} text-white`}>
-            Hi, I'm <span className="text-[#915eff]">Mickey</span>
+            Hi, I'm <span className="text-[#915eff]">Uzelac</span>
           </h1>
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-            I develop 3D visuals, user <br className="sm:block hidden" />{" "}
-            interfaces and web applications
+            I develop films, light <br className="sm:block hidden" />{" "}
+            effects and great sounds
           </p>
         </div>
       </div>

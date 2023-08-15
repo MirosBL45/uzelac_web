@@ -14,10 +14,6 @@
 }
 
 @media only screen and (max-width: 650px) {
-  .mobileContainer {
-    display: none;
-  }
-
   .onMobile {
     position: absolute;
     transform: translateY(50vh);
@@ -25,7 +21,7 @@
   }
 }
 
-@media only screen and (min-width: 650px) {
+@media only screen and (min-width: 651px) {
   .onMobile {
     display: none;
   }
