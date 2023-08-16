@@ -27,6 +27,39 @@
   }
 }
 
+.intro_animation {
+  position: relative;
+  animation: intro_here 1.5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes intro_here {
+  0% {
+    left: -500px;
+    top: -900px;
+  }
+
+  50% {
+    left: 200px;
+    top: -50px;
+  }
+
+  /* 60% {
+    left: 300px;
+    top: 60px;
+  }
+
+  80% {
+    left: -100px;
+    top: 40px;
+  } */
+
+  100% {
+    left: 0px;
+    top: 0px;
+  }
+}
+
 .hash-span {
   margin-top: -100px;
   padding-bottom: 100px;
