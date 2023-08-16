@@ -22,15 +22,13 @@ function Hero({ language }) {
             <span className="text-[#915eff]">Uzelac</span>
           </h1>
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-            {/* I develop films, light <br className="sm:block hidden" /> effects
-            and great sounds */}
             {language === "eng"
-              ? "I transform Moments through dynamic Lighting,"
-              : "Transformišem Trenutke kroz dinamičko Osvetljenje,"}
+              ? "I transform MOMENTS through dynamic LIGHTING,"
+              : "Transformišem TRENUTKE kroz dinamičko OSVETLJENJE,"}
             <br className="sm:block hidden" />
             {language === "eng"
-              ? " impressive Sound, and Visual artistry"
-              : " impresivan Zvuk i Vizuelnu umetnost"}
+              ? " impressive SOUND, and VISUAL artistry"
+              : " impresivan ZVUK i VIZUELNU umetnost"}
           </p>
         </div>
       </div>

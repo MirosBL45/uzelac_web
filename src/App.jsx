@@ -15,6 +15,7 @@ import React, { useState } from 'react';
 
 function App() {
   const [language, setLanguage] = useState('eng');
+  // const [language, setLanguage] = useState('srb');
 
   return (
     <BrowserRouter>
@@ -23,7 +24,7 @@ function App() {
           <Navbar setLanguage={setLanguage} language={language} />
           <Hero language={language} />
         </div>
-        <About />
+        <About language={language} />
         <Experience language={language} />
         <Tech />
         <Works />

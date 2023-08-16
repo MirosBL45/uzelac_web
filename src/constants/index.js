@@ -57,19 +57,38 @@ export const navLinksSR = [
 
 const services = [
     {
-        title: "Web Developer",
+        title: "Lighting Design",
         icon: web,
     },
     {
-        title: "React Native Developer",
+        title: "Soundscaping",
         icon: mobile,
     },
     {
-        title: "Backend Developer",
+        title: "Visual Storytelling",
         icon: backend,
     },
     {
-        title: "Content Creator",
+        title: "Multisensory Experiences",
+        icon: creator,
+    },
+];
+
+const servicesSR = [
+    {
+        title: "Dizajn Osvetljenja",
+        icon: web,
+    },
+    {
+        title: "Zvučni Pejzaži",
+        icon: mobile,
+    },
+    {
+        title: "Vizuelna Priča",
+        icon: backend,
+    },
+    {
+        title: "Multisenzorna Iskustva",
         icon: creator,
     },
 ];
@@ -332,4 +351,4 @@ const projects = [
     },
 ];
 
-export { services, technologies, experiences, experiencesSR, testimonials, projects };
+export { services, servicesSR, technologies, experiences, experiencesSR, testimonials, projects };

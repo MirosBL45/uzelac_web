@@ -34,7 +34,6 @@ function Experience({ language }) {
                   <ExpirienceCard key={index} experience={experience} />
                 ))}
         </VerticalTimeline>
-        <p>{`ovde ide ${language}`}</p>
       </div>
     </>
   );
