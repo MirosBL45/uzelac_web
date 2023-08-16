@@ -16,7 +16,7 @@
 @media only screen and (max-width: 650px) {
   .onMobile {
     position: absolute;
-    transform: translateY(50vh);
+    transform: translateY(55vh);
     padding: 0 50px;
   }
 }

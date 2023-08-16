@@ -2,9 +2,9 @@ import { motion } from "framer-motion";
 
 import { styles } from "../styles";
 import { ComputersCanvas } from "./canvas";
-import danceArena from '../assets/images/dance_arena.png'
+import danceArena from "../assets/images/dance_arena.png";
 
-function Hero() {
+function Hero({ language }) {
   return (
     <section className="relative w-full h-screen mx-auto">
       <div
@@ -18,11 +18,19 @@ function Hero() {
         {/* text with description about that specific man */}
         <div>
           <h1 className={`${styles.heroHeadText} text-white`}>
-            Hi, I'm <span className="text-[#915eff]">Uzelac</span>
+            {language === "eng" ? "I am" : "Ja sam"}{" "}
+            <span className="text-[#915eff]">Uzelac</span>
           </h1>
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-            I develop films, light <br className="sm:block hidden" />{" "}
-            effects and great sounds
+            {/* I develop films, light <br className="sm:block hidden" /> effects
+            and great sounds */}
+            {language === "eng"
+              ? "I transform Moments through dynamic Lighting,"
+              : "Transformišem Trenutke kroz dinamičko Osvetljenje,"}
+            <br className="sm:block hidden" />
+            {language === "eng"
+              ? " impressive Sound, and Visual artistry"
+              : " impresivan Zvuk i Vizuelnu umetnost"}
           </p>
         </div>
       </div>

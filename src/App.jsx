@@ -12,7 +12,6 @@ import {
   StarsCanvas,
 } from './components';
 import React, { useState } from 'react';
-// import Experience from './components/Experience';
 
 function App() {
   const [language, setLanguage] = useState('eng');
@@ -22,7 +21,7 @@ function App() {
       <div className="relative z-0 bg-primary">
         <div className="bg-hero-pattern bg-cover bg-no-repeat bg-center">
           <Navbar setLanguage={setLanguage} language={language} />
-          <Hero />
+          <Hero language={language} />
         </div>
         <About />
         <Experience language={language} />
