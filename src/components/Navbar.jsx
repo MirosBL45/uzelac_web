@@ -97,7 +97,10 @@ function Navbar({ setLanguage, language }) {
               {language === "eng"
                 ? navLinks.map((link) => (
                     <li
-                      onClick={() => setActive(link.title)}
+                      onClick={() => {
+                        setActive(link.title);
+                        setToggle(false);
+                      }}
                       key={link.id}
                       className={`${
                         link.id === "contact"
@@ -128,6 +131,7 @@ function Navbar({ setLanguage, language }) {
               <img
                 className="cursor-pointer"
                 onClick={() => {
+                  setToggle(false);
                   if (language === "eng") {
                     setLanguage("srb");
                   } else {
