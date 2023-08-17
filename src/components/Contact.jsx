@@ -46,7 +46,9 @@ function Contact({ language }) {
               name="name"
               value={form.name}
               onChange={handleChange}
-              placeholder="What's your name?"
+              placeholder={
+                language === "eng" ? "What's your name?" : "Kako se zovete?"
+              }
               className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
             />
           </label>
@@ -59,18 +61,26 @@ function Contact({ language }) {
               name="email"
               value={form.email}
               onChange={handleChange}
-              placeholder="What's your email?"
+              placeholder={
+                language === "eng" ? "What's your email?" : "Koji je Vaš email?"
+              }
               className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
             />
           </label>
           <label className="flex flex-col">
-            <span className="text-white font-medium mb-4">{language === "eng" ? "Your Message" : "Vaša Poruka"}</span>
+            <span className="text-white font-medium mb-4">
+              {language === "eng" ? "Your Message" : "Vaša Poruka"}
+            </span>
             <textarea
               rows={7}
               name="message"
               value={form.message}
               onChange={handleChange}
-              placeholder="What do you want to say?"
+              placeholder={
+                language === "eng"
+                  ? "What do you want to say?"
+                  : "Šta želite da kažete?"
+              }
               className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
             />
           </label>
@@ -78,7 +88,14 @@ function Contact({ language }) {
             type="submit"
             className="bg-tertiary py-3 px-8 outline-none w-fit text-white font-bold shadow-md shadow-primary rounded-xl"
           >
-            {loading ? "Sending..." : "Send"}
+            {language === "eng"
+              ? loading
+                ? "Sending..."
+                : "Send"
+              : loading
+              ? "Šalje se..."
+              : "Pošalji"}
+            {/* {loading ? "Sending..." : "Send"} */}
           </button>
         </form>
       </motion.div>
