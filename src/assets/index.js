@@ -1,4 +1,5 @@
 import logo from "./logo.svg";
+import uziLogo from "./uziLogo.png";
 import backend from "./backend.png";
 import creator from "./creator.png";
 import mobile from "./mobile.png";
@@ -35,6 +36,7 @@ import iconSr from "./flags/iconSr.png";
 
 export {
   logo,
+  uziLogo,
   backend,
   creator,
   mobile,

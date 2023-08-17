@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 import { styles } from "../styles";
 import { navLinks, navLinksSR } from "../constants";
-import { logo, menu, close, iconSr, iconEn } from "../assets";
+import { logo, uziLogo, menu, close, iconSr, iconEn } from "../assets";
 
 function Navbar({ setLanguage, language }) {
   const [active, setActive] = useState("");
@@ -23,7 +23,7 @@ function Navbar({ setLanguage, language }) {
             window.scrollTo(0, 0);
           }}
         >
-          <img src={logo} alt="logo" className="w-9 h-9 object-contain" />
+          <img src={uziLogo} alt="logo" className="w-9 h-9 object-contain" />
           <p className="text-white text-[18px] font-bold cursor-pointer mr-6">
             Uzelac <span className="sm:inline-block hidden">| Light</span>
           </p>
