@@ -1,90 +1,33 @@
-import { Tilt } from 'react-tilt';
-import { motion } from 'framer-motion';
+import ProjectCard from "./parts_of_components/ProjectCard";
 
-import { styles } from '../styles';
-import { github } from '../assets';
-import { SectionWrapper } from '../hoc';
-import { projects } from '../constants';
-import { textVariant, fadeIn } from '../utils/motion';
+import { motion } from "framer-motion";
 
-function ProjectCard({
-  index,
-  name,
-  description,
-  tags,
-  image,
-  source_code_link,
-}) {
-  return (
-    <motion.div variants={fadeIn('up', 'spring', index * 0.5, 0.75)}>
-      <Tilt
-        className="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full"
-        options={{ max: 45, scale: 1, speed: 450 }}
-      >
-        <div className="relative w-full h-[230px]">
-          {/* image of project */}
-          <img
-            src={image}
-            alt={name}
-            className="w-full h-full object-cover rounded-2xl"
-          />
-          {/* icon of github, can be duplicated for link of deployed project on the web */}
-          <div className="absolute inset-0 flex justify-end m-3 card-img_hover">
-            <div
-            // onClick={() => window.open(source_code_link, "_blank")}
-            // className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
-            >
-              <a
-                className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
-                href={source_code_link}
-                target="_blank"
-              >
-                <img
-                  src={github}
-                  alt="github link"
-                  className="object-contain w-1/2 h-1/2"
-                />
-              </a>
-            </div>
-          </div>
-        </div>
-        {/* text to describe work and projects */}
-        <div className="mt-5">
-          <h3 className="text-white font-bold text-[24px]">{name}</h3>
-          <p className="text-secondary mt-2 text-[14px]">{description}</p>
-        </div>
-        {/* hashtags */}
-        <div className="mt-4 flex flex-wrap gap-2">
-          {tags.map((tag) => (
-            <p key={tag.name} className={`text-[14px] ${tag.color}`}>
-              #{tag.name}
-            </p>
-          ))}
-        </div>
-      </Tilt>
-    </motion.div>
-  );
-}
+import { styles } from "../styles";
+import { SectionWrapper } from "../hoc";
+import { projects } from "../constants";
+import { textVariant, fadeIn } from "../utils/motion";
 
-function Works() {
+function Works({ language }) {
   return (
     <>
       {/* headlines */}
       <motion.div variants={textVariant()}>
-        <p className={styles.sectionSubText}>My work</p>
-        <h2 className={styles.sectionHeadText}>Projects.</h2>
+        <p className={styles.sectionSubText}>
+          {language === "eng" ? "My work" : "Moj rad"}
+        </p>
+        <h2 className={styles.sectionHeadText}>
+          {language === "eng" ? "Projects" : "Projekti"}.
+        </h2>
       </motion.div>
       {/* description of all work */}
       <div className="w-full flex">
         <motion.p
           className="mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]"
-          variants={fadeIn('', '', 0.1, 1)}
+          variants={fadeIn("", "", 0.1, 1)}
         >
-          Following projects showcases my skills and experience through
-          real-world examples of my work. Each project is briefly described with
-          links to code repositories and live demos in it. It reflects my
-          ability to solve complex problems, work with different technologies,
-          and manage projects effectively.
+          {language === "eng"
+            ? "My portfolio includes diverse projects, from iconic concerts to film productions that have entered the hearts of viewers. With my ability to harmonize light, colors and sound, I provide depth and dimension to any environment. My experience in sound further enriches each production, laying the foundation for the total immersion of the audience in the event."
+            : "Moj portfolio obuhvata raznolike projekte, od ikoničnih koncerata do filmskih ostvarenja koja su se uvukla u srca gledalaca. Svojom sposobnošću da uskladim svetlost, boje i zvuk, pružam dubinu i dimenziju svakom ambijentu. Moje iskustvo sa zvukom dodatno obogaćuje svaku produkciju, postavljajući temelje za potpuno uranjanje publike u događaj."}
         </motion.p>
       </div>
       {/* cards of work */}
@@ -97,4 +40,4 @@ function Works() {
   );
 }
 
-export default SectionWrapper(Works, '');
+export default SectionWrapper(Works, "");
