@@ -1,4 +1,4 @@
-import { BrowserRouter } from 'react-router-dom';
+import { BrowserRouter } from "react-router-dom";
 
 import {
   About,
@@ -10,11 +10,12 @@ import {
   Tech,
   Works,
   StarsCanvas,
-} from './components';
-import React, { useState } from 'react';
+} from "./components";
+import React, { useState } from "react";
+import Footer from "./components/Footer";
 
 function App() {
-  const [language, setLanguage] = useState('eng');
+  const [language, setLanguage] = useState("eng");
   // const [language, setLanguage] = useState('srb');
 
   return (
@@ -32,6 +33,7 @@ function App() {
         <div className="relative z-0">
           <Contact language={language} />
           <StarsCanvas />
+          <Footer language={language} />
         </div>
       </div>
     </BrowserRouter>
