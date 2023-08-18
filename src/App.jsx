@@ -29,7 +29,7 @@ function App() {
         <Experience language={language} />
         <Tech />
         <Works language={language} />
-        <Feedbacks />
+        <Feedbacks language={language} />
         <div className="relative z-0">
           <Contact language={language} />
           <StarsCanvas />
