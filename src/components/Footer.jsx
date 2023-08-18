@@ -41,7 +41,7 @@ function Footer({ language }) {
           >
             Miroslav Jović
           </a>
-          . Slobodno se javite putem{" "}
+          . Slobodno mi se javite putem{" "}
           <a
             title="jovicmiroslav88@gmail.com"
             className="text-[#915eff] hover:text-[hsl(259,100%,75%)]"
