@@ -16,8 +16,48 @@ function Contact({ language }) {
   });
   const [loading, setLoading] = useState(false);
 
-  function handleChange(e) {}
-  function handleSubmit(e) {}
+  function handleChange(e) {
+    const { name, value } = e.target;
+
+    setForm({ ...form, [name]: value });
+  }
+
+  function handleSubmit(e) {
+    e.preventDefault();
+    setLoading(true);
+    emailjs
+      .send(
+        "service_i3rs6cc",
+        "template_okfabjh",
+        {
+          from_name: form.name,
+          to_name: "Uzelac",
+          from_email: form.email,
+          to_email: "jovicmiroslav88@gmail.com",
+          message: form.message,
+        },
+        "o2jP32BE4AwKYKPs8"
+      )
+      .then(
+        () => {
+          setLoading(false);
+          alert("Thank you. I will get back to you as soon as possible.");
+
+          setForm({
+            name: "",
+            email: "",
+            message: "",
+          });
+        },
+        (error) => {
+          setLoading(false);
+
+          console.log(error);
+
+          alert("Somthing went wrong.");
+        }
+      );
+  }
 
   return (
     <div className="xl:mt-12 xl:flex-row flex-col-reverse flex gap-10 overflow-hidden">
