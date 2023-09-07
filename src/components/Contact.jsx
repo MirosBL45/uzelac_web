@@ -9,18 +9,7 @@ import { slideIn } from "../utils/motion";
 
 function Contact({ language }) {
   const formRef = useRef();
-  // const [form, setForm] = useState({
-  //   name: "",
-  //   email: "",
-  //   message: "",
-  // });
   const [loading, setLoading] = useState(false);
-
-  // function handleChange(e) {
-  //   const { name, value } = e.target;
-
-  //   setForm({ ...form, [name]: value });
-  // }
 
   function handleSubmit(e) {
     e.preventDefault();
@@ -35,61 +24,24 @@ function Contact({ language }) {
       .then(
         () => {
           setLoading(false);
-          alert("Thank you. I will get back to you as soon as possible.");
-
-          // setForm({
-          //   name: "",
-          //   email: "",
-          //   message: "",
-          // });
+          if (language === "eng") {
+            alert("Thank you. I will get back to you as soon as possible.");
+          } else {
+            alert("Hvala Vam. Javiću se čim budem u prilici.");
+          }
         },
         (error) => {
           setLoading(false);
-
           console.log(error);
-
-          alert("Somthing went wrong.");
+          if (language === "eng") {
+            alert("Somthing went wrong. Please, try again.");
+          } else {
+            alert("Nešto ne radi. Molimo probajte ponovo.");
+          }
         }
       );
     e.target.reset();
   }
-
-  // function handleSubmit(e) {
-  //   e.preventDefault();
-  //   setLoading(true);
-  //   emailjs
-  //     .send(
-  //       "service_i3rs6cc",
-  //       "template_okfabjh",
-  //       {
-  //         from_name: form.name,
-  //         to_name: "Uzelac",
-  //         from_email: form.email,
-  //         to_email: "jovicmiroslav88@gmail.com",
-  //         message: form.message,
-  //       },
-  //       "o2jP32BE4AwKYKPs8"
-  //     )
-  //     .then(
-  //       () => {
-  //         setLoading(false);
-  //         alert("Thank you. I will get back to you as soon as possible.");
-
-  //         setForm({
-  //           name: "",
-  //           email: "",
-  //           message: "",
-  //         });
-  //       },
-  //       (error) => {
-  //         setLoading(false);
-
-  //         console.log(error);
-
-  //         alert("Somthing went wrong.");
-  //       }
-  //     );
-  // }
 
   return (
     <div className="xl:mt-12 xl:flex-row flex-col-reverse flex gap-10 overflow-hidden">
@@ -116,8 +68,6 @@ function Contact({ language }) {
             <input
               type="text"
               name="user_name"
-              // value={form.name}
-              // onChange={handleChange}
               placeholder={
                 language === "eng" ? "Full Name?" : "Vaše ime i prezime?"
               }
@@ -131,10 +81,23 @@ function Contact({ language }) {
             <input
               type="email"
               name="user_email"
-              // value={form.email}
-              // onChange={handleChange}
               placeholder={
                 language === "eng" ? "What's your email?" : "Koji je Vaš email?"
+              }
+              className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
+            />
+          </label>
+          <label className="flex flex-col">
+            <span className="text-white font-medium mb-4">
+              {language === "eng" ? "Subject" : "Naslov"}
+            </span>
+            <input
+              type="text"
+              name="subject"
+              placeholder={
+                language === "eng"
+                  ? "What's the subject of message"
+                  : "Koja je tema poruke?"
               }
               className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
             />
@@ -146,8 +109,6 @@ function Contact({ language }) {
             <textarea
               rows={7}
               name="message"
-              // value={form.message}
-              // onChange={handleChange}
               placeholder={
                 language === "eng"
                   ? "What do you want to say?"
@@ -167,7 +128,6 @@ function Contact({ language }) {
               : loading
               ? "Šalje se..."
               : "Pošalji"}
-            {/* {loading ? "Sending..." : "Send"} */}
           </button>
         </form>
       </motion.div>
