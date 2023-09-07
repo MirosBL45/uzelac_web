@@ -9,33 +9,27 @@ import { slideIn } from "../utils/motion";
 
 function Contact({ language }) {
   const formRef = useRef();
-  const [form, setForm] = useState({
-    name: "",
-    email: "",
-    message: "",
-  });
+  // const [form, setForm] = useState({
+  //   name: "",
+  //   email: "",
+  //   message: "",
+  // });
   const [loading, setLoading] = useState(false);
 
-  function handleChange(e) {
-    const { name, value } = e.target;
+  // function handleChange(e) {
+  //   const { name, value } = e.target;
 
-    setForm({ ...form, [name]: value });
-  }
+  //   setForm({ ...form, [name]: value });
+  // }
 
   function handleSubmit(e) {
     e.preventDefault();
     setLoading(true);
     emailjs
-      .send(
+      .sendForm(
         "service_i3rs6cc",
         "template_okfabjh",
-        {
-          from_name: form.name,
-          to_name: "Uzelac",
-          from_email: form.email,
-          to_email: "jovicmiroslav88@gmail.com",
-          message: form.message,
-        },
+        formRef.current,
         "o2jP32BE4AwKYKPs8"
       )
       .then(
@@ -43,11 +37,11 @@ function Contact({ language }) {
           setLoading(false);
           alert("Thank you. I will get back to you as soon as possible.");
 
-          setForm({
-            name: "",
-            email: "",
-            message: "",
-          });
+          // setForm({
+          //   name: "",
+          //   email: "",
+          //   message: "",
+          // });
         },
         (error) => {
           setLoading(false);
@@ -57,7 +51,45 @@ function Contact({ language }) {
           alert("Somthing went wrong.");
         }
       );
+    e.target.reset();
   }
+
+  // function handleSubmit(e) {
+  //   e.preventDefault();
+  //   setLoading(true);
+  //   emailjs
+  //     .send(
+  //       "service_i3rs6cc",
+  //       "template_okfabjh",
+  //       {
+  //         from_name: form.name,
+  //         to_name: "Uzelac",
+  //         from_email: form.email,
+  //         to_email: "jovicmiroslav88@gmail.com",
+  //         message: form.message,
+  //       },
+  //       "o2jP32BE4AwKYKPs8"
+  //     )
+  //     .then(
+  //       () => {
+  //         setLoading(false);
+  //         alert("Thank you. I will get back to you as soon as possible.");
+
+  //         setForm({
+  //           name: "",
+  //           email: "",
+  //           message: "",
+  //         });
+  //       },
+  //       (error) => {
+  //         setLoading(false);
+
+  //         console.log(error);
+
+  //         alert("Somthing went wrong.");
+  //       }
+  //     );
+  // }
 
   return (
     <div className="xl:mt-12 xl:flex-row flex-col-reverse flex gap-10 overflow-hidden">
@@ -83,11 +115,11 @@ function Contact({ language }) {
             </span>
             <input
               type="text"
-              name="name"
-              value={form.name}
-              onChange={handleChange}
+              name="user_name"
+              // value={form.name}
+              // onChange={handleChange}
               placeholder={
-                language === "eng" ? "What's your name?" : "Kako se zovete?"
+                language === "eng" ? "Full Name?" : "Vaše ime i prezime?"
               }
               className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
             />
@@ -98,9 +130,9 @@ function Contact({ language }) {
             </span>
             <input
               type="email"
-              name="email"
-              value={form.email}
-              onChange={handleChange}
+              name="user_email"
+              // value={form.email}
+              // onChange={handleChange}
               placeholder={
                 language === "eng" ? "What's your email?" : "Koji je Vaš email?"
               }
@@ -114,8 +146,8 @@ function Contact({ language }) {
             <textarea
               rows={7}
               name="message"
-              value={form.message}
-              onChange={handleChange}
+              // value={form.message}
+              // onChange={handleChange}
               placeholder={
                 language === "eng"
                   ? "What do you want to say?"
