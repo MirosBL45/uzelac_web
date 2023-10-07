@@ -1,15 +1,16 @@
-import { Suspense, useEffect, useState } from "react";
-import { Canvas } from "@react-three/fiber";
-import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
+import { Suspense, useEffect, useState } from 'react';
+import { Canvas } from '@react-three/fiber';
+import { OrbitControls, Preload, useGLTF } from '@react-three/drei';
 
-import CanvasLoader from "../Loader";
+import CanvasLoader from '../Loader';
 
 function Computers({ isMobile }) {
-  const computer = useGLTF("./desktop_pc/scene.gltf");
+  const computer = useGLTF('./desktop_pc/scene.gltf');
 
   return (
     <mesh>
       <hemisphereLight intensity={0.45} groundColor="black" />
+      {/* <pointLight intensity={0} /> */}
       <pointLight intensity={20} />
       <spotLight
         position={[-20, 50, 10]}
@@ -35,19 +36,19 @@ function ComputersCanvas() {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
   useEffect(() => {
     const handleResize = () => setWindowWidth(window.innerWidth);
-    window.addEventListener("resize", handleResize);
+    window.addEventListener('resize', handleResize);
     // Add a listener for changes to the screen size
-    const mediaQuery = window.matchMedia("(max-width: 500px)");
+    const mediaQuery = window.matchMedia('(max-width: 500px)');
     // Set the initial value of the `isMobile` state variable
     setIsMobile(mediaQuery.matches);
     // Define a callback function to handle changes to the media query
     const handleMediaQueryChange = (e) => setIsMobile(e.matches);
     // Add the callback function as a listener for changes to the media query
-    mediaQuery.addEventListener("change", handleMediaQueryChange);
+    mediaQuery.addEventListener('change', handleMediaQueryChange);
     // Remove the listener when the component is unmounted
     return () => {
-      mediaQuery.removeEventListener("change", handleMediaQueryChange);
-      window.removeEventListener("resize", handleResize);
+      mediaQuery.removeEventListener('change', handleMediaQueryChange);
+      window.removeEventListener('resize', handleResize);
     };
   }, []);
 

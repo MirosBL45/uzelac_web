@@ -1,12 +1,16 @@
-import { VerticalTimelineElement } from "react-vertical-timeline-component";
+import { VerticalTimelineElement } from 'react-vertical-timeline-component';
 
-import "react-vertical-timeline-component/style.min.css";
+import 'react-vertical-timeline-component/style.min.css';
 
 function ExpirienceCard({ experience }) {
   return (
     <VerticalTimelineElement
-      contentStyle={{ background: "#1d1836", color: "#fff" }}
-      contentArrowStyle={{ borderRight: "7px solid #232631" }}
+      contentStyle={{
+        background: '#1d1836',
+        color: '#fff',
+        borderRadius: '20px',
+      }}
+      contentArrowStyle={{ borderRight: '7px solid #232631' }}
       date={experience.date}
       iconStyle={{ background: experience.iconBg }}
       icon={

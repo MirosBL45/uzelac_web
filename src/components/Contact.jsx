@@ -1,11 +1,11 @@
-import { useState, useRef } from "react";
-import { motion } from "framer-motion";
-import emailjs from "@emailjs/browser";
+import { useState, useRef } from 'react';
+import { motion } from 'framer-motion';
+import emailjs from '@emailjs/browser';
 
-import { styles } from "../styles";
-import { EarthCanvas } from "./canvas";
-import { SectionWrapper } from "../hoc";
-import { slideIn } from "../utils/motion";
+import { styles } from '../styles';
+import { EarthCanvas } from './canvas';
+import { SectionWrapper } from '../hoc';
+import { slideIn } from '../utils/motion';
 
 function Contact({ language }) {
   const formRef = useRef();
@@ -16,27 +16,27 @@ function Contact({ language }) {
     setLoading(true);
     emailjs
       .sendForm(
-        "service_i3rs6cc",
-        "template_okfabjh",
+        'service_i3rs6cc',
+        'template_okfabjh',
         formRef.current,
-        "o2jP32BE4AwKYKPs8"
+        'o2jP32BE4AwKYKPs8'
       )
       .then(
         () => {
           setLoading(false);
-          if (language === "eng") {
-            alert("Thank you. I will get back to you as soon as possible.");
+          if (language === 'eng') {
+            alert('Thank you. I will get back to you as soon as possible.');
           } else {
-            alert("Hvala Vam. Javiću se čim budem u prilici.");
+            alert('Hvala Vam. Javiću se čim budem u prilici.');
           }
         },
         (error) => {
           setLoading(false);
           console.log(error);
-          if (language === "eng") {
-            alert("Somthing went wrong. Please, try again.");
+          if (language === 'eng') {
+            alert('Somthing went wrong. Please, try again.');
           } else {
-            alert("Nešto ne radi. Molimo probajte ponovo.");
+            alert('Nešto ne radi. Molimo probajte ponovo.');
           }
         }
       );
@@ -46,14 +46,14 @@ function Contact({ language }) {
   return (
     <div className="xl:mt-12 xl:flex-row flex-col-reverse flex gap-10 overflow-hidden">
       <motion.div
-        variants={slideIn("left", "tween", 0.2, 1)}
+        variants={slideIn('left', 'tween', 0.2, 1)}
         className="flex-[0.75] bg-black-100 p-8 rounded-2xl"
       >
         <p className={styles.sectionSubText}>
-          {language === "eng" ? "Get in touch" : "Budimo u kontaktu"}
+          {language === 'eng' ? 'Get in touch' : 'Budimo u kontaktu'}
         </p>
         <h3 className={styles.sectionHeadText}>
-          {language === "eng" ? "Contact" : "Kontakt"}.
+          {language === 'eng' ? 'Contact' : 'Kontakt'}.
         </h3>
         {/* form for contact */}
         <form
@@ -63,56 +63,54 @@ function Contact({ language }) {
         >
           <label className="flex flex-col">
             <span className="text-white font-medium mb-4">
-              {language === "eng" ? "Your Name" : "Vaše Ime"}
+              {language === 'eng' ? 'Your Name' : 'Vaše Ime'}
             </span>
             <input
               type="text"
               name="user_name"
               placeholder={
-                language === "eng" ? "Full Name?" : "Vaše ime i prezime?"
+                language === 'eng' ? 'Full Name?' : 'Vaše ime i prezime?'
               }
               className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
             />
           </label>
           <label className="flex flex-col">
             <span className="text-white font-medium mb-4">
-              {language === "eng" ? "Your Email" : "Vaš Email"}
+              {language === 'eng' ? 'Your Email' : 'Vaš Email'}
             </span>
             <input
               type="email"
               name="user_email"
               placeholder={
-                language === "eng" ? "What's your email?" : "Koji je Vaš email?"
+                language === 'eng' ? "What's your email?" : 'Koji je Vaš email?'
               }
               className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
             />
           </label>
           <label className="flex flex-col">
             <span className="text-white font-medium mb-4">
-              {language === "eng" ? "Subject" : "Naslov"}
+              {language === 'eng' ? 'Subject' : 'Naslov'}
             </span>
             <input
               type="text"
               name="subject"
               placeholder={
-                language === "eng"
-                  ? "What's the subject of message"
-                  : "Koja je tema poruke?"
+                language === 'eng' ? "What's the subject?" : 'Koja je tema?'
               }
               className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
             />
           </label>
           <label className="flex flex-col">
             <span className="text-white font-medium mb-4">
-              {language === "eng" ? "Your Message" : "Vaša Poruka"}
+              {language === 'eng' ? 'Your Message' : 'Vaša Poruka'}
             </span>
             <textarea
               rows={7}
               name="message"
               placeholder={
-                language === "eng"
-                  ? "What do you want to say?"
-                  : "Šta želite da kažete?"
+                language === 'eng'
+                  ? 'What do you want to say?'
+                  : 'Šta želite da kažete?'
               }
               className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
             />
@@ -121,19 +119,19 @@ function Contact({ language }) {
             type="submit"
             className="bg-tertiary py-3 px-8 outline-none w-fit text-white font-bold shadow-md shadow-primary rounded-xl"
           >
-            {language === "eng"
+            {language === 'eng'
               ? loading
-                ? "Sending..."
-                : "Send"
+                ? 'Sending...'
+                : 'Send'
               : loading
-              ? "Šalje se..."
-              : "Pošalji"}
+              ? 'Šalje se...'
+              : 'Pošalji'}
           </button>
         </form>
       </motion.div>
       {/* earth canvas for floating planet */}
       <motion.div
-        variants={slideIn("right", "tween", 0.2, 1)}
+        variants={slideIn('right', 'tween', 0.2, 1)}
         className="xl:flex-1 xl:h-auto md:h-[550px] h-[350px]"
       >
         <EarthCanvas />
@@ -142,4 +140,4 @@ function Contact({ language }) {
   );
 }
 
-export default SectionWrapper(Contact, "contact");
+export default SectionWrapper(Contact, 'contact');

@@ -1,7 +1,7 @@
-import { Tilt } from "react-tilt";
-import { github } from "../../assets";
-import { motion } from "framer-motion";
-import { fadeIn } from "../../utils/motion";
+import { Tilt } from 'react-tilt';
+import { github } from '../../assets';
+import { motion } from 'framer-motion';
+import { fadeIn } from '../../utils/motion';
 
 function ProjectCard({
   index,
@@ -12,7 +12,10 @@ function ProjectCard({
   source_code_link,
 }) {
   return (
-    <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
+    <motion.div
+      className="mx-auto"
+      variants={fadeIn('up', 'spring', index * 0.5, 0.75)}
+    >
       <Tilt
         className="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full"
         options={{ max: 45, scale: 1, speed: 450 }}

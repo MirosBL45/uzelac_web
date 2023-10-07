@@ -1,8 +1,8 @@
-import { motion } from "framer-motion";
+import { motion } from 'framer-motion';
 
-import { styles } from "../styles";
-import { ComputersCanvas } from "./canvas";
-import danceArena from "../assets/images/dance_arena.png";
+import { styles } from '../styles';
+import { ComputersCanvas } from './canvas';
+import danceArena from '../assets/images/dance_arena.png';
 
 function Hero({ language }) {
   return (
@@ -18,23 +18,23 @@ function Hero({ language }) {
         {/* text with description about that specific man */}
         <div>
           <h1 className={`${styles.heroHeadText} text-white`}>
-            {language === "eng" ? "I am" : "Ja sam"}{" "}
+            {language === 'eng' ? 'I am' : 'Ja sam'}{' '}
             <span className="text-[#915eff]">Uzelac</span>
           </h1>
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-            {language === "eng"
-              ? "I transform MOMENTS through dynamic LIGHTING,"
-              : "Transformišem TRENUTKE kroz dinamičko OSVETLJENJE,"}
+            {language === 'eng'
+              ? 'I transform MOMENTS through dynamic LIGHTING,'
+              : 'Transformišem TRENUTKE kroz dinamičko OSVETLJENJE,'}
             <br className="sm:block hidden" />
-            {language === "eng"
-              ? " impressive SOUND, and VISUAL artistry"
-              : " impresivan ZVUK i VIZUELNU umetnost"}
+            {language === 'eng'
+              ? ' impressive SOUND, and VISUAL artistry'
+              : ' impresivan ZVUK i VIZUELNU umetnost'}
           </p>
         </div>
       </div>
       <ComputersCanvas />
       <div className="onMobile">
-        <img src={danceArena} alt="danceArena" />
+        <img className="rounded-[20px]" src={danceArena} alt="danceArena" />
       </div>
       {/* scroll div */}
       <div className="absolute xs:bottom-10 bottom-[50px] w-full flex justify-center items-center">
@@ -46,7 +46,7 @@ function Hero({ language }) {
               transition={{
                 duration: 1.5,
                 repeat: Infinity,
-                repeatType: "loop",
+                repeatType: 'loop',
               }}
             />
           </div>
