@@ -78,13 +78,16 @@ function Navbar({ setLanguage, language }) {
         </ul>
         {/* for mobile device list of links on page */}
         <div className="sm:hidden flex flex-1 justify-end items-center">
-          <img
-            src={toggle ? close : menu}
-            alt="menu"
-            className="object-contain cursor-pointer"
+          <div
+            class="inline-block p-4 cursor-pointer"
             onClick={() => setToggle(!toggle)}
-          />
-
+          >
+            <img
+              src={toggle ? close : menu}
+              alt="menu"
+              className="object-contain"
+            />
+          </div>
           <div
             className={`${
               !toggle ? 'hidden' : 'flex'
@@ -112,7 +115,10 @@ function Navbar({ setLanguage, language }) {
                   ))
                 : navLinksSR.map((link) => (
                     <li
-                      onClick={() => setActive(link.title)}
+                      onClick={() => {
+                        setActive(link.title);
+                        setToggle(false);
+                      }}
                       key={link.id}
                       className={`${
                         link.id === 'contact'

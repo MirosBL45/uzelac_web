@@ -16,7 +16,7 @@ function Hero({ language }) {
           <div className="w-1 sm:h-80 h-40 violet-gradient" />
         </div>
         {/* text with description about that specific man */}
-        <div>
+        <header>
           <h1 className={`${styles.heroHeadText} text-white`}>
             {language === 'eng' ? 'I am' : 'Ja sam'}{' '}
             <span className="text-[#915eff]">Uzelac</span>
@@ -30,7 +30,7 @@ function Hero({ language }) {
               ? ' impressive SOUND, and VISUAL artistry'
               : ' impresivan ZVUK i VIZUELNU umetnost'}
           </p>
-        </div>
+        </header>
       </div>
       <ComputersCanvas />
       <div className="onMobile">

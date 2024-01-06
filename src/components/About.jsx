@@ -8,7 +8,7 @@ import ServiceCard from './parts_of_components/ServiceCard';
 
 function About({ language }) {
   return (
-    <>
+    <main>
       {/* text of Overview and Introduction */}
       <motion.div variants={textVariant()}>
         <p className={styles.sectionSubText}>
@@ -36,7 +36,7 @@ function About({ language }) {
               <ServiceCard key={service.title} index={index} {...service} />
             ))}
       </div>
-    </>
+    </main>
   );
 }
 
