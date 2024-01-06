@@ -1,12 +1,12 @@
-import { useState } from "react";
-import { Link } from "react-router-dom";
+import { useState } from 'react';
+import { Link } from 'react-router-dom';
 
-import { styles } from "../styles";
-import { navLinks, navLinksSR } from "../constants";
-import { logo, uziLogo, menu, close, iconSr, iconEn } from "../assets";
+import { styles } from '../styles';
+import { navLinks, navLinksSR } from '../constants';
+import { uziLogo, menu, close, iconSr, iconEn } from '../assets';
 
 function Navbar({ setLanguage, language }) {
-  const [active, setActive] = useState("");
+  const [active, setActive] = useState('');
   const [toggle, setToggle] = useState(false);
 
   return (
@@ -17,30 +17,27 @@ function Navbar({ setLanguage, language }) {
         {/* logo with link to back home */}
         <Link
           className="flex items-center gap-2"
-          to={"/"}
+          to={'/'}
           onClick={() => {
-            setActive("");
+            setActive('');
             window.scrollTo(0, 0);
           }}
         >
-          <img src={uziLogo} alt="logo" className="w-9 h-9 object-contain" />
-          <p className="text-white text-[18px] font-bold cursor-pointer mr-6">
-            Uzelac <span className="sm:inline-block hidden">| Light</span>
-          </p>
+          <img src={uziLogo} alt="logo" className="object-cover" />
         </Link>
         {/* list of links on page */}
         <ul className="list-none hidden sm:flex flex-row gap-10">
-          {language === "eng"
+          {language === 'eng'
             ? navLinks.map((link) => (
                 <li
                   onClick={() => setActive(link.title)}
                   key={link.id}
                   className={`${
-                    link.id === "contact"
-                      ? "bg-[#915eff] text-[#f5af19] rounded-2xl px-5 py-2"
-                      : ""
+                    link.id === 'contact'
+                      ? 'bg-[#915eff] text-[#f5af19] rounded-2xl px-5 py-2'
+                      : ''
                   } ${
-                    active === link.title ? "text-white" : "text-secondary"
+                    active === link.title ? 'text-white' : 'text-secondary'
                   } hover:text-white text-[18px] font-medium cursor-pointer flex justify-center items-center`}
                 >
                   <a href={`#${link.id}`}>{link.title}</a>
@@ -51,11 +48,11 @@ function Navbar({ setLanguage, language }) {
                   onClick={() => setActive(link.title)}
                   key={link.id}
                   className={`${
-                    link.id === "contact"
-                      ? "bg-[#915eff] text-[#f5af19] rounded-2xl px-5 py-2"
-                      : ""
+                    link.id === 'contact'
+                      ? 'bg-[#915eff] text-[#f5af19] rounded-2xl px-5 py-2'
+                      : ''
                   } ${
-                    active === link.title ? "text-white" : "text-secondary"
+                    active === link.title ? 'text-white' : 'text-secondary'
                   } hover:text-white text-[18px] font-medium cursor-pointer flex justify-center items-center`}
                 >
                   <a href={`#${link.id}`}>{link.title}</a>
@@ -64,18 +61,18 @@ function Navbar({ setLanguage, language }) {
           <img
             className="cursor-pointer"
             onClick={() => {
-              if (language === "eng") {
-                setLanguage("srb");
+              if (language === 'eng') {
+                setLanguage('srb');
               } else {
-                setLanguage("eng");
+                setLanguage('eng');
               }
             }}
-            src={language === "eng" ? iconSr : iconEn}
-            alt={language === "eng" ? "SRB" : "ENG"}
+            src={language === 'eng' ? iconSr : iconEn}
+            alt={language === 'eng' ? 'SRB' : 'ENG'}
             title={
-              language === "eng"
-                ? "Prevedi na srpski"
-                : "Translation into English"
+              language === 'eng'
+                ? 'Prevedi na srpski'
+                : 'Translation into English'
             }
           />
         </ul>
@@ -90,11 +87,11 @@ function Navbar({ setLanguage, language }) {
 
           <div
             className={`${
-              !toggle ? "hidden" : "flex"
+              !toggle ? 'hidden' : 'flex'
             } p-6 black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[240px] z-10 rounded-xl`}
           >
             <ul className="list-none flex justify-end items-start flex-col gap-6">
-              {language === "eng"
+              {language === 'eng'
                 ? navLinks.map((link) => (
                     <li
                       onClick={() => {
@@ -103,11 +100,11 @@ function Navbar({ setLanguage, language }) {
                       }}
                       key={link.id}
                       className={`${
-                        link.id === "contact"
-                          ? "bg-[#915eff] text-[#f5af19] rounded-2xl px-5 py-2"
-                          : ""
+                        link.id === 'contact'
+                          ? 'bg-[#915eff] text-[#f5af19] rounded-2xl px-5 py-2'
+                          : ''
                       } ${
-                        active === link.title ? "text-white" : "text-secondary"
+                        active === link.title ? 'text-white' : 'text-secondary'
                       } hover:text-white text-[18px] font-medium cursor-pointer flex justify-center items-center`}
                     >
                       <a href={`#${link.id}`}>{link.title}</a>
@@ -118,11 +115,11 @@ function Navbar({ setLanguage, language }) {
                       onClick={() => setActive(link.title)}
                       key={link.id}
                       className={`${
-                        link.id === "contact"
-                          ? "bg-[#915eff] text-[#f5af19] rounded-2xl px-5 py-2"
-                          : ""
+                        link.id === 'contact'
+                          ? 'bg-[#915eff] text-[#f5af19] rounded-2xl px-5 py-2'
+                          : ''
                       } ${
-                        active === link.title ? "text-white" : "text-secondary"
+                        active === link.title ? 'text-white' : 'text-secondary'
                       } hover:text-white text-[18px] font-medium cursor-pointer flex justify-center items-center`}
                     >
                       <a href={`#${link.id}`}>{link.title}</a>
@@ -132,18 +129,18 @@ function Navbar({ setLanguage, language }) {
                 className="cursor-pointer"
                 onClick={() => {
                   setToggle(false);
-                  if (language === "eng") {
-                    setLanguage("srb");
+                  if (language === 'eng') {
+                    setLanguage('srb');
                   } else {
-                    setLanguage("eng");
+                    setLanguage('eng');
                   }
                 }}
-                src={language === "eng" ? iconSr : iconEn}
-                alt={language === "eng" ? "SRB" : "ENG"}
+                src={language === 'eng' ? iconSr : iconEn}
+                alt={language === 'eng' ? 'SRB' : 'ENG'}
                 title={
-                  language === "eng"
-                    ? "Prevedi na srpski"
-                    : "Translation into English"
+                  language === 'eng'
+                    ? 'Prevedi na srpski'
+                    : 'Translation into English'
                 }
               />
             </ul>

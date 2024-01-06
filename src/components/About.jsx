@@ -35,9 +35,6 @@ function About({ language }) {
           : servicesSR.map((service, index) => (
               <ServiceCard key={service.title} index={index} {...service} />
             ))}
-        {/* {services.map((service, index) => (
-          <ServiceCard key={service.title} index={index} {...service} />
-        ))} */}
       </div>
     </>
   );
