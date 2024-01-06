@@ -8,19 +8,19 @@ import github from "./github.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
 
-import css from "./tech/css.png";
-import docker from "./tech/docker.png";
-import figma from "./tech/figma.png";
-import git from "./tech/git.png";
-import html from "./tech/html.png";
-import javascript from "./tech/javascript.png";
-import mongodb from "./tech/mongodb.png";
-import nodejs from "./tech/nodejs.png";
-import reactjs from "./tech/reactjs.png";
-import redux from "./tech/redux.png";
-import tailwind from "./tech/tailwind.png";
-import typescript from "./tech/typescript.png";
-import threejs from "./tech/threejs.svg";
+import audio from "./tech/audio.png";
+import band from "./tech/band.png";
+import concertStar from "./tech/concert-star.png";
+import spotlight from "./tech/spotlight.png";
+import discoBall from "./tech/disco-ball.png";
+import entertainment from "./tech/entertainment.png";
+import equalizer from "./tech/equalizer.png";
+import stage from "./tech/stage.png";
+import movieFrame from "./tech/movie-frame.png";
+import movieTheater from "./tech/movie-theater.png";
+import musicWave from "./tech/music-wave.png";
+import concert from "./tech/concert.png";
+import spotLights from "./tech/spot-lights.png";
 
 import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
@@ -44,19 +44,19 @@ export {
   github,
   menu,
   close,
-  css,
-  docker,
-  figma,
-  git,
-  html,
-  javascript,
-  mongodb,
-  nodejs,
-  reactjs,
-  redux,
-  tailwind,
-  typescript,
-  threejs,
+  audio,
+  band,
+  concertStar,
+  spotlight,
+  discoBall,
+  entertainment,
+  equalizer,
+  stage,
+  movieFrame,
+  movieTheater,
+  musicWave,
+  concert,
+  spotLights,
   meta,
   shopify,
   starbucks,

@@ -79,7 +79,7 @@ function Navbar({ setLanguage, language }) {
         {/* for mobile device list of links on page */}
         <div className="sm:hidden flex flex-1 justify-end items-center">
           <div
-            class="inline-block p-4 cursor-pointer"
+            className="inline-block p-4 cursor-pointer"
             onClick={() => setToggle(!toggle)}
           >
             <img
