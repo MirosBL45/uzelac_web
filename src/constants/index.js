@@ -16,13 +16,14 @@ import {
     concertStar,
     band,
     meta,
-    starbucks,
+    uziSmall,
     tesla,
     shopify,
     carrent,
     jobit,
     tripguide,
     spotLights,
+    soundRay,
 } from "../assets";
 
 export const navLinks = [
@@ -166,10 +167,10 @@ const technologies = [
 
 const experiences = [
     {
-        title: "Tehnicar Rasvete i Tona",
+        title: "Tehničar Rasvete i Tona",
         company_name: "SoundRay",
-        icon: starbucks,
-        iconBg: "#383E56",
+        icon: soundRay,
+        iconBg: "#E6DEDD",
         date: "March 2020 - April 2021",
         points: [
             "Developing and maintaining web applications using React.js and other related technologies.",
@@ -179,7 +180,7 @@ const experiences = [
         ],
     },
     {
-        title: "Tehnicar Rasvete i Lasera",
+        title: "Tehničar Rasvete i Lasera",
         company_name: "SkyMusic",
         icon: tesla,
         iconBg: "#E6DEDD",
@@ -192,11 +193,11 @@ const experiences = [
         ],
     },
     {
-        title: "Tehnicar Rasvete",
-        company_name: "Uzelac Company",
-        icon: shopify,
+        title: "Tehničar Rasvete",
+        company_name: "Uzelac Entrepreneur",
+        icon: uziSmall,
         iconBg: "#383E56",
-        date: "Jan 2022 - Jan 2023",
+        date: "Jul 2021 - Present",
         points: [
             "Developing and maintaining web applications using React.js and other related technologies.",
             "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
@@ -209,8 +210,8 @@ const experiences = [
 const experiencesSR = [
     {
         title: "React.js Developer",
-        company_name: "Starbucks",
-        icon: starbucks,
+        company_name: "SoundRay",
+        icon: soundRay,
         iconBg: "#383E56",
         date: "March 2020 - April 2021",
         points: [

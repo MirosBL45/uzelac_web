@@ -1,4 +1,3 @@
-import logo from "./logo.svg";
 import uziLogo from "./uziLogo.png";
 import backend from "./backend.png";
 import creator from "./creator.png";
@@ -24,7 +23,8 @@ import spotLights from "./tech/spot-lights.png";
 
 import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
-import starbucks from "./company/starbucks.png";
+import uziSmall from "./uziLogo-small.svg";
+import soundRay from "./soundRayLogo.svg";
 import tesla from "./company/tesla.png";
 
 import carrent from "./carrent.png";
@@ -35,8 +35,8 @@ import iconEn from "./flags/iconEn.png";
 import iconSr from "./flags/iconSr.png";
 
 export {
-  logo,
   uziLogo,
+  soundRay,
   backend,
   creator,
   mobile,
@@ -59,7 +59,7 @@ export {
   spotLights,
   meta,
   shopify,
-  starbucks,
+  uziSmall,
   tesla,
   carrent,
   jobit,
