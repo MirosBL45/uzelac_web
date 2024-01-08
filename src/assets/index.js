@@ -25,6 +25,7 @@ import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
 import uziSmall from "./uziLogo-small.svg";
 import soundRay from "./soundRayLogo.svg";
+import skyMusic from "./skyMusicLogo.svg";
 import tesla from "./company/tesla.png";
 
 import carrent from "./carrent.png";
@@ -37,6 +38,7 @@ import iconSr from "./flags/iconSr.png";
 export {
   uziLogo,
   soundRay,
+  skyMusic,
   backend,
   creator,
   mobile,
