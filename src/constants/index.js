@@ -268,10 +268,10 @@ const testimonials = [
     {
         testimonial:
             "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-        name: "Sara Lee",
-        designation: "CFO",
-        company: "Acme Co",
-        image: "https://randomuser.me/api/portraits/women/4.jpg",
+        name: "Martin Gabco",
+        designation: "Multimedia laser show designer",
+        company: "KVANT",
+        image: "https://media.licdn.com/dms/image/D4D35AQFdp1fsXkGWnw/profile-framedphoto-shrink_800_800/0/1695024656572?e=1705420800&v=beta&t=-DypeN0uYofw2g3JGvKsYBxiNLJKuODaQSf01jNxCcs",
     },
     {
         testimonial:
