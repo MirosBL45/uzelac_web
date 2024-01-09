@@ -168,6 +168,55 @@ const technologies = [
 
 const experiences = [
     {
+        title: "Lighting and Sound Technician",
+        company_name: "SoundRay",
+        icon: soundRay,
+        iconBg: "#E6DEDD",
+        date: "March 2010 - Novembar 2014",
+        points: [
+            "Participation in the design and implementation of lighting systems for various events, such as concerts, theater performances, fashion shows.",
+            "Providing technical support during the event.",
+            "Installation, testing and maintenance of lighting and sound equipment.",
+            "Communicating with clients to understand their requirements and needs.",
+            "Monitoring safety at work and implementing measures to preserve the integrity of the equipment.",
+            "Adjusting sound systems to achieve the desired sound quality.",
+            "Solving equipment problems and providing technical support.",
+        ],
+    },
+    {
+        title: "Lighting and Laser Technician",
+        company_name: "SkyMusic",
+        icon: skyMusic,
+        iconBg: "#E6DEDD",
+        date: "December 2014 - Jun 2021",
+        points: [
+            "Design and implementation of laser effects for various events, concerts, weddings and other manifestations.",
+            "Managing the integration of audio, light and laser systems to achieve a synchronized experience.",
+            "Working with complex controls and software for laser effects.",
+            "Adjustment and synchronization of laser performance with other elements of production.",
+            "Education of the team and users on the safe handling of laser technology.",
+        ],
+    },
+    {
+        title: "Lighting technician",
+        company_name: "Uzelac Entrepreneur",
+        icon: uziSmall,
+        iconBg: "#f5cd82",
+        date: "Jul 2021 - Present",
+        points: [
+            "Designing optimal solutions for lighting spaces or events.",
+            "Selection of appropriate lighting equipment in accordance with the needs of the project.",
+            "Talking to clients to understand their lighting needs and wants.",
+            "Providing expert advice on the types of lighting solutions that would suit the specific requirements of an event or space.",
+            "Organization and supervision of the installation of lighting equipment on site.",
+            "Adjusting and configuring lights to achieve the desired effect.",
+            "Organization of the work of the team of lighting technicians.",
+        ],
+    },
+];
+
+const experiencesSR = [
+    {
         title: "Tehničar Rasvete i Tona",
         company_name: "SoundRay",
         icon: soundRay,
@@ -199,70 +248,18 @@ const experiences = [
     },
     {
         title: "Tehničar Rasvete",
-        company_name: "Uzelac Entrepreneur",
+        company_name: "Uzelac Preduzetnik",
         icon: uziSmall,
         iconBg: "#f5cd82",
-        date: "Jul 2021 - Present",
+        date: "Jul 2021 - I dalje",
         points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
-        ],
-    },
-];
-
-const experiencesSR = [
-    {
-        title: "React.js Developer",
-        company_name: "SoundRay",
-        icon: soundRay,
-        iconBg: "#383E56",
-        date: "March 2020 - April 2021",
-        points: [
-            "srDeveloping and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "srImplementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
-        ],
-    },
-    {
-        title: "React Native Developer",
-        company_name: "Tesla",
-        icon: tesla,
-        iconBg: "#E6DEDD",
-        date: "Jan 2021 - Feb 2022",
-        points: [
-            "srDeveloping and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "srParticipating in code reviews and providing constructive feedback to other developers.",
-        ],
-    },
-    {
-        title: "Web Developer",
-        company_name: "Shopify",
-        icon: shopify,
-        iconBg: "#383E56",
-        date: "Jan 2022 - Jan 2023",
-        points: [
-            "srDeveloping and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "srParticipating in code reviews and providing constructive feedback to other developers.",
-        ],
-    },
-    {
-        title: "Full stack Developer",
-        company_name: "Meta",
-        icon: meta,
-        iconBg: "#E6DEDD",
-        date: "Jan 2023 - Present",
-        points: [
-            "srDeveloping and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "srParticipating in code reviews and providing constructive feedback to other developers.",
+            "Projektovanje optimalnih rešenja za osvetljavanje prostora ili događaja.",
+            "Odabir odgovarajuće rasvetne opreme u skladu s potrebama projekta.",
+            "Razgovor s klijentima kako bi razumeli njihove potrebe i želje u vezi s osvetljenjem.",
+            "Pružanje stručnih saveta o vrstama rasvetnih rešenja koja bi odgovarala specifičnim zahtevima događaja ili prostora.",
+            "Organizacija i nadgledanje instalacije rasvetne opreme na licu mesta.",
+            "Podešavanje i konfiguracija svetala kako bi se postigao željeni efekat.",
+            "Organizacija rada tima tehničara rasvete.",
         ],
     },
 ];
