@@ -26,8 +26,15 @@ function Tech() {
       ) : (
         <div className="flex flex-row flex-wrap justify-center gap-10">
           {technologies.map((technology) => (
-            <div key={technology.name} className="w-28 h-28">
-              <img src={technology.icon} alt={technology.name} />
+            <div
+              key={technology.name}
+              className="w-32 h-32 rounded-full border-2 border-gray-300 p-5"
+            >
+              <img
+                src={technology.icon}
+                alt={technology.name}
+                className="w-full"
+              />
             </div>
           ))}
         </div>
