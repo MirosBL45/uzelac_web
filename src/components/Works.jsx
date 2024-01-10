@@ -35,6 +35,7 @@ function Works({ language }) {
         {language === 'eng'
           ? projects.map((project, index) => (
               <ProjectCard
+                language={language}
                 key={`project-${index}`}
                 index={index}
                 {...project}
@@ -42,6 +43,7 @@ function Works({ language }) {
             ))
           : projectsSR.map((project, index) => (
               <ProjectCard
+                language={language}
                 key={`project-${index}`}
                 index={index}
                 {...project}

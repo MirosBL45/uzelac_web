@@ -16,7 +16,6 @@ import {
     concertStar,
     band,
     uziSmall,
-    carrent,
     jobit,
     tripguide,
     spotLights,

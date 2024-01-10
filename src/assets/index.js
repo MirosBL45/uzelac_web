@@ -3,7 +3,7 @@ import visual from "./visual.png";
 import multisensory from "./multisensory.png";
 import laser from "./laser.png";
 import lighting from "./lighting.png";
-import github from "./github.png";
+import domain from "./domain.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
 
@@ -31,7 +31,6 @@ import papovic from "./persons/papovic.jpg";
 
 import bwf from "./projects/bwf.jpg";
 
-import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 
@@ -46,7 +45,6 @@ export {
   multisensory,
   laser,
   lighting,
-  github,
   menu,
   close,
   audio,
@@ -63,7 +61,7 @@ export {
   concert,
   spotLights,
   uziSmall,
-  carrent,
+  domain,
   jobit,
   tripguide,
   iconSr,
@@ -71,4 +69,5 @@ export {
   gabco,
   papovic,
   bwf,
+  domain,
 };

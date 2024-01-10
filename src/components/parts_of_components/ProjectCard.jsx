@@ -1,5 +1,5 @@
 import { Tilt } from 'react-tilt';
-import { github } from '../../assets';
+import { domain } from '../../assets';
 import { motion } from 'framer-motion';
 import { fadeIn } from '../../utils/motion';
 
@@ -10,6 +10,7 @@ function ProjectCard({
   tags,
   image,
   source_code_link,
+  language,
 }) {
   return (
     <motion.div
@@ -28,17 +29,21 @@ function ProjectCard({
               alt={name}
               className="w-full h-full object-cover rounded-2xl"
             />
-            {/* icon of github, can be duplicated for link of deployed project on the web */}
             <div className="absolute inset-0 flex justify-end m-3 card-img_hover">
               <div>
                 <a
                   className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
                   href={source_code_link}
                   target="_blank"
+                  title={
+                    language === 'eng'
+                      ? 'View the project on the web'
+                      : 'Pogledaj projekat na webu'
+                  }
                 >
                   <img
-                    src={github}
-                    alt="github link"
+                    src={domain}
+                    alt="project link"
                     className="object-contain w-1/2 h-1/2"
                   />
                 </a>
