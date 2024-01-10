@@ -23,6 +23,8 @@ import {
     soundRay,
     skyMusic,
     gabco,
+    papovic,
+    bwf,
 } from "../assets";
 
 export const navLinks = [
@@ -273,11 +275,11 @@ const testimonials = [
     },
     {
         testimonial:
-            "I've never met a web developer who truly cares about their clients' success like Rick does.",
-        name: "Chris Brown",
-        designation: "COO",
-        company: "DEF Corp",
-        image: "https://randomuser.me/api/portraits/men/5.jpg",
+            "As a Lighting and Laser Effects Specialist, Uzelac exceeded all expectations regarding the projects he worked on. Uzelac's technical knowledge is impressive and his ability to translate creative visions into reality is outstanding. He was instrumental in the design and implementation of lighting and laser effects on various projects. His expertise in working with roto-heads and other lighting equipment added significant value to our projects. What I especially appreciate about Uzelac is his dedication to work. He was always ready to take initiative, solve problems quickly and adapt to changes during projects. His communication and cooperation with the team was outstanding, creating a positive atmosphere and contributing to the success of the entire team. Uzelac has shown that he is a skilled professional and a leader in his field.",
+        name: "Radomir Papović",
+        designation: "Special Projects Manager",
+        company: "SkyMusic",
+        image: papovic,
     },
     {
         testimonial:
@@ -300,11 +302,11 @@ const testimonialsSR = [
     },
     {
         testimonial:
-            "I've never met a web developer who truly cares about their clients' success like Rick does.",
-        name: "Chris Brown",
-        designation: "COO",
-        company: "DEF Corp",
-        image: "https://randomuser.me/api/portraits/men/5.jpg",
+            "Kao Specijalista za osvetljenje i laserske efekte, Uzelac je premašio sva očekivanja u vezi sa projektima na kojima je radio. Uzelčevo tehničko znanje je impresivno, a njegova sposobnost da prevede kreativne vizije u stvarnost je izvanredna. Bio je ključan u projektovanju i implementaciji svetlosnih i laserskih efekata na različitim projektima. Njegova stručnost u radu sa roto-glavama i ostalom opremom za rasvetu dodala je značajnu vrednost našim projektima. Ono što posebno cenim kod Uzelca jeste njegova predanost poslu. Uvek je bio spreman da preuzme inicijativu, brzo rešava probleme i prilagođava se promenama tokom projekata. Njegova komunikacija i saradnja sa timom bili su izvanredni, stvarajući pozitivnu atmosferu i doprinoseći uspehu celokupnog tima. Uzelac je pokazao da je vešt profesionalac i lider u oblasti rasvete.",
+        name: "Radomir Papović",
+        designation: "Special Projects Manager",
+        company: "SkyMusic",
+        image: papovic,
     },
     {
         testimonial:
@@ -318,25 +320,25 @@ const testimonialsSR = [
 
 const projects = [
     {
-        name: "Car Rent",
+        name: "Belgrade Tower",
         description:
-            "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+            "This December 31st, the greatest party in Serbia took place at Belgrade Waterfront. As guests of Sava Promenada sailed into the new year, a spectacular light and pyrotechnic show above Belgrade Tower marked „the craziest night“ in the Serbian capital. This project's complexity was arranging the lasers, roto-heads on the tower's exterior and roof, and linking for all devices simultaneously. It was required to set up many light effects projections to go along with the music.",
         tags: [
             {
-                name: "react",
+                name: "lighting",
                 color: "blue-text-gradient",
             },
             {
-                name: "equalizer",
+                name: "laser",
                 color: "green-text-gradient",
             },
             {
-                name: "musicWave",
+                name: "fireworks",
                 color: "pink-text-gradient",
             },
         ],
-        image: carrent,
-        source_code_link: "https://github.com/",
+        image: bwf,
+        source_code_link: "https://www.belgradewaterfront.com/en/events",
     },
     {
         name: "Job IT",
@@ -382,4 +384,70 @@ const projects = [
     },
 ];
 
-export { services, servicesSR, technologies, experiences, experiencesSR, testimonials, testimonialsSR, projects };
+const projectsSR = [
+    {
+        name: "Kula Beograd",
+        description:
+            "Ovog 31. decembra u Beogradu na vodi održana je najveća žurka u Srbiji. Dok su gosti Sava Promenade uplovili u novu godinu, spektakularna svetlosna i pirotehnička predstava iznad Kule Beograd obeležila je „najluđu noć“ u srpskoj prestonici. Složenost ovog projekta bila je uređenje lasera, roto-glava na spoljašnjosti i krovu kule, i povezivanje svih uređaja. Bilo je potrebno podesiti nekoliko projekcija svetlosnih efekata da prate muziku.",
+        tags: [
+            {
+                name: "rasveta",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "laser",
+                color: "green-text-gradient",
+            },
+            {
+                name: "vatromet",
+                color: "pink-text-gradient",
+            },
+        ],
+        image: bwf,
+        source_code_link: "https://www.belgradewaterfront.com/en/events",
+    },
+    {
+        name: "Job IT",
+        description:
+            "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+        tags: [
+            {
+                name: "react",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "restapi",
+                color: "green-text-gradient",
+            },
+            {
+                name: "scss",
+                color: "pink-text-gradient",
+            },
+        ],
+        image: jobit,
+        source_code_link: "https://github.com/",
+    },
+    {
+        name: "Trip Guide",
+        description:
+            "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+        tags: [
+            {
+                name: "nextjs",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "supabase",
+                color: "green-text-gradient",
+            },
+            {
+                name: "audio",
+                color: "pink-text-gradient",
+            },
+        ],
+        image: tripguide,
+        source_code_link: "https://github.com/",
+    },
+];
+
+export { services, servicesSR, technologies, experiences, experiencesSR, testimonials, testimonialsSR, projects, projectsSR };

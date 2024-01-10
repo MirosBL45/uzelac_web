@@ -27,6 +27,9 @@ import skyMusic from "./company/skyMusicLogo.svg";
 
 
 import gabco from "./persons/gabco.jpg";
+import papovic from "./persons/papovic.jpg";
+
+import bwf from "./projects/bwf.jpg";
 
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
@@ -66,4 +69,6 @@ export {
   iconSr,
   iconEn,
   gabco,
+  papovic,
+  bwf,
 };

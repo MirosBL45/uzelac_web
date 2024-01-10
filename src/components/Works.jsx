@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 
 import { styles } from '../styles';
 import { SectionWrapper } from '../hoc';
-import { projects } from '../constants';
+import { projects, projectsSR } from '../constants';
 import { textVariant, fadeIn } from '../utils/motion';
 
 function Works({ language }) {
@@ -32,9 +32,21 @@ function Works({ language }) {
       </div>
       {/* cards of work */}
       <div className="mt-20 flex flex-wrap gap-7">
-        {projects.map((project, index) => (
-          <ProjectCard key={`project-${index}`} index={index} {...project} />
-        ))}
+        {language === 'eng'
+          ? projects.map((project, index) => (
+              <ProjectCard
+                key={`project-${index}`}
+                index={index}
+                {...project}
+              />
+            ))
+          : projectsSR.map((project, index) => (
+              <ProjectCard
+                key={`project-${index}`}
+                index={index}
+                {...project}
+              />
+            ))}
       </div>
     </>
   );
