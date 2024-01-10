@@ -1,8 +1,8 @@
 import uziLogo from "./uziLogo.png";
-import backend from "./backend.png";
-import creator from "./creator.png";
-import mobile from "./mobile.png";
-import web from "./web.png";
+import visual from "./visual.png";
+import multisensory from "./multisensory.png";
+import laser from "./laser.png";
+import lighting from "./lighting.png";
 import github from "./github.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
@@ -21,12 +21,12 @@ import musicWave from "./tech/music-wave.png";
 import concert from "./tech/concert.png";
 import spotLights from "./tech/spot-lights.png";
 
-import meta from "./company/meta.png";
-import shopify from "./company/shopify.png";
-import uziSmall from "./uziLogo-small.svg";
-import soundRay from "./soundRayLogo.svg";
-import skyMusic from "./skyMusicLogo.svg";
-import tesla from "./company/tesla.png";
+import uziSmall from "./company/uziLogo-small.svg";
+import soundRay from "./company/soundRayLogo.svg";
+import skyMusic from "./company/skyMusicLogo.svg";
+
+
+import gabco from "./persons/gabco.jpg";
 
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
@@ -39,10 +39,10 @@ export {
   uziLogo,
   soundRay,
   skyMusic,
-  backend,
-  creator,
-  mobile,
-  web,
+  visual,
+  multisensory,
+  laser,
+  lighting,
   github,
   menu,
   close,
@@ -59,13 +59,11 @@ export {
   musicWave,
   concert,
   spotLights,
-  meta,
-  shopify,
   uziSmall,
-  tesla,
   carrent,
   jobit,
   tripguide,
   iconSr,
   iconEn,
+  gabco,
 };

@@ -1,4 +1,4 @@
-import { BrowserRouter } from "react-router-dom";
+import { BrowserRouter } from 'react-router-dom';
 
 import {
   About,
@@ -10,13 +10,12 @@ import {
   Tech,
   Works,
   StarsCanvas,
-} from "./components";
-import React, { useState } from "react";
-import Footer from "./components/Footer";
+} from './components';
+import React, { useState } from 'react';
+import Footer from './components/Footer';
 
 function App() {
-  const [language, setLanguage] = useState("eng");
-  // const [language, setLanguage] = useState('srb');
+  const [language, setLanguage] = useState('eng');
 
   return (
     <BrowserRouter>

@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 import { styles } from '../styles';
 import { SectionWrapper } from '../hoc';
 import { textVariant } from '../utils/motion';
-import { testimonials } from '../constants';
+import { testimonials, testimonialsSR } from '../constants';
 
 function Feedbacks({ language }) {
   return (
@@ -23,10 +23,24 @@ function Feedbacks({ language }) {
           </h2>
         </motion.div>
       </div>
-      <div className={`${styles.paddingX} -mt-20 pb-14 flex flex-wrap gap-7`}>
-        {testimonials.map((testimonial, index) => (
-          <FeedbackCard index={index} key={testimonial.name} {...testimonial} />
-        ))}
+      <div className={`px-5 -mt-20 pb-14 flex flex-wrap gap-[25px]`}>
+        {language === 'eng'
+          ? testimonials.map((testimonial, index) => (
+              <FeedbackCard
+                language={language}
+                index={index}
+                key={testimonial.name}
+                {...testimonial}
+              />
+            ))
+          : testimonialsSR.map((testimonial, index) => (
+              <FeedbackCard
+                language={language}
+                index={index}
+                key={testimonial.name}
+                {...testimonial}
+              />
+            ))}
       </div>
     </div>
   );

@@ -1,8 +1,8 @@
 import {
-    mobile,
-    backend,
-    creator,
-    web,
+    laser,
+    visual,
+    multisensory,
+    lighting,
     entertainment,
     concert,
     discoBall,
@@ -15,16 +15,14 @@ import {
     spotlight,
     concertStar,
     band,
-    meta,
     uziSmall,
-    tesla,
-    shopify,
     carrent,
     jobit,
     tripguide,
     spotLights,
     soundRay,
     skyMusic,
+    gabco,
 } from "../assets";
 
 export const navLinks = [
@@ -76,38 +74,38 @@ export const navLinksSR = [
 const services = [
     {
         title: "Lighting Design",
-        icon: web,
+        icon: lighting,
     },
     {
-        title: "Soundscaping",
-        icon: mobile,
+        title: "Laser Landscapes",
+        icon: laser,
     },
     {
         title: "Visual Storytelling",
-        icon: backend,
+        icon: visual,
     },
     {
         title: "Multisensory Experiences",
-        icon: creator,
+        icon: multisensory,
     },
 ];
 
 const servicesSR = [
     {
         title: "Dizajn Osvetljenja",
-        icon: web,
+        icon: lighting,
     },
     {
-        title: "Zvučni Pejzaži",
-        icon: mobile,
+        title: "Laserski Pejzaži",
+        icon: laser,
     },
     {
         title: "Vizuelna Priča",
-        icon: backend,
+        icon: visual,
     },
     {
         title: "Multisenzorna Iskustva",
-        icon: creator,
+        icon: multisensory,
     },
 ];
 
@@ -168,7 +166,7 @@ const technologies = [
 
 const experiences = [
     {
-        title: "Lighting and Sound Technician",
+        title: "Lighting and Sound Effects Specialist",
         company_name: "SoundRay",
         icon: soundRay,
         iconBg: "#E6DEDD",
@@ -184,7 +182,7 @@ const experiences = [
         ],
     },
     {
-        title: "Lighting and Laser Technician",
+        title: "Lighting and Laser Effects Specialist",
         company_name: "SkyMusic",
         icon: skyMusic,
         iconBg: "#E6DEDD",
@@ -198,7 +196,7 @@ const experiences = [
         ],
     },
     {
-        title: "Lighting technician",
+        title: "Multimedia Lighting Show Designer",
         company_name: "Uzelac Entrepreneur",
         icon: uziSmall,
         iconBg: "#f5cd82",
@@ -217,7 +215,7 @@ const experiences = [
 
 const experiencesSR = [
     {
-        title: "Tehničar Rasvete i Tona",
+        title: "Specijalista za osvetljenje i zvučne efekte",
         company_name: "SoundRay",
         icon: soundRay,
         iconBg: "#E6DEDD",
@@ -233,7 +231,7 @@ const experiencesSR = [
         ],
     },
     {
-        title: "Tehničar Rasvete i Lasera",
+        title: "Specijalista za osvetljenje i laserske efekte",
         company_name: "SkyMusic",
         icon: skyMusic,
         iconBg: "#E6DEDD",
@@ -247,7 +245,7 @@ const experiencesSR = [
         ],
     },
     {
-        title: "Tehničar Rasvete",
+        title: "Dizajner multimedijalnog osvetljenja",
         company_name: "Uzelac Preduzetnik",
         icon: uziSmall,
         iconBg: "#f5cd82",
@@ -267,11 +265,38 @@ const experiencesSR = [
 const testimonials = [
     {
         testimonial:
-            "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
+            "Working with Uzelac on the lighting project for the New Year at the Belgrade Tower in Belgrade Waterfront was an extremely positive and productive experience. Uzelac demonstrated a high level of professionalism and dedication throughout the entire process, from consultation and planning to installation and execution. His ability to quickly resolve technical challenges and adapt to changes in the course of events contributed to the smooth execution of the project. Our harmony in work contributed to the synergy between the laser effects that I controlled and the lighting effects that Uzelac performed. The result was a spectacular experience at the Belgrade Tower in Belgrade Waterfront during New Year's Eve.",
         name: "Martin Gabco",
         designation: "Multimedia laser show designer",
         company: "KVANT",
-        image: "https://media.licdn.com/dms/image/D4D35AQFdp1fsXkGWnw/profile-framedphoto-shrink_800_800/0/1695024656572?e=1705420800&v=beta&t=-DypeN0uYofw2g3JGvKsYBxiNLJKuODaQSf01jNxCcs",
+        image: gabco,
+    },
+    {
+        testimonial:
+            "I've never met a web developer who truly cares about their clients' success like Rick does.",
+        name: "Chris Brown",
+        designation: "COO",
+        company: "DEF Corp",
+        image: "https://randomuser.me/api/portraits/men/5.jpg",
+    },
+    {
+        testimonial:
+            "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
+        name: "Lisa Wang",
+        designation: "CTO",
+        company: "456 Enterprises",
+        image: "https://randomuser.me/api/portraits/women/6.jpg",
+    },
+];
+
+const testimonialsSR = [
+    {
+        testimonial:
+            "Rad sa Uzelcem na projektu rasvete za Novu godinu na Kuli Beograd u Beogradu na vodi bilo je izuzetno pozitivno i produktivno iskustvo. Uzelac je pokazao visok nivo profesionalizma i posvećenosti tokom celog procesa, od konsultacija i planiranja do montaže i izvođenja. Njegova sposobnost da brzo rešava tehničke izazove i prilagođava se promenama u toku događaja doprinela je nesmetanoj realizaciji projekta. Naš sklad u radu doprineo je sinergiji između laserskih efekata koje sam kontrolisao i svetlosnih efekata koje je izvodio Uzelac. Rezultat je bio spektakularno iskustvo na Kuli Beograd u Beogradu na vodi tokom novogodišnje noći.",
+        name: "Martin Gabco",
+        designation: "Dizajner Laserskih Efekata",
+        company: "KVANT",
+        image: gabco,
     },
     {
         testimonial:
@@ -357,4 +382,4 @@ const projects = [
     },
 ];
 
-export { services, servicesSR, technologies, experiences, experiencesSR, testimonials, projects };
+export { services, servicesSR, technologies, experiences, experiencesSR, testimonials, testimonialsSR, projects };
