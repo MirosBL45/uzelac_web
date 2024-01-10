@@ -66,6 +66,7 @@ function Contact({ language }) {
               {language === 'eng' ? 'Your Name' : 'Vaše Ime'}
             </span>
             <input
+              required
               type="text"
               name="user_name"
               placeholder={
@@ -79,6 +80,7 @@ function Contact({ language }) {
               {language === 'eng' ? 'Your Email' : 'Vaš Email'}
             </span>
             <input
+              required
               type="email"
               name="user_email"
               placeholder={
@@ -92,6 +94,7 @@ function Contact({ language }) {
               {language === 'eng' ? 'Subject' : 'Naslov'}
             </span>
             <input
+              required
               type="text"
               name="subject"
               placeholder={
@@ -105,6 +108,7 @@ function Contact({ language }) {
               {language === 'eng' ? 'Your Message' : 'Vaša Poruka'}
             </span>
             <textarea
+              required
               rows={7}
               name="message"
               placeholder={
@@ -116,6 +120,9 @@ function Contact({ language }) {
             />
           </label>
           <button
+            title={
+              language === 'eng' ? 'Send this message' : 'Pošalji ovu poruku'
+            }
             type="submit"
             className="bg-tertiary py-3 px-8 outline-none w-fit text-white font-bold shadow-md shadow-primary rounded-xl"
           >
