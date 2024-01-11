@@ -2,8 +2,8 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 
 import { styles } from '../styles';
-import { navLinks, navLinksSR } from '../constants';
-import { uziLogo, menu, close, iconSr, iconEn } from '../assets';
+import { navLinks, navLinksSR } from '../allText';
+import { uziLogo, menu, close, iconSr, iconEn } from '../assets/forImages';
 
 function Navbar({ setLanguage, language }) {
   const [active, setActive] = useState('');

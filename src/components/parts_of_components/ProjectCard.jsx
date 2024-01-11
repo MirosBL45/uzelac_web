@@ -1,5 +1,5 @@
 import { Tilt } from 'react-tilt';
-import { domain } from '../../assets';
+import { domain } from '../../assets/forImages';
 import { motion } from 'framer-motion';
 import { fadeIn } from '../../utils/motion';
 

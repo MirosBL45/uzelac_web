@@ -24,7 +24,7 @@ import {
     gabco,
     papovic,
     bwf,
-} from "../assets";
+} from "../assets/forImages";
 
 export const navLinks = [
     {

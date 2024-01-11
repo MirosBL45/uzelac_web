@@ -109,7 +109,7 @@ function Contact({ language }) {
             </span>
             <textarea
               required
-              rows={7}
+              rows={3}
               name="message"
               placeholder={
                 language === 'eng'
