@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 
 import { styles } from '../styles';
-import { services, servicesSR } from '../allText';
+import { services, servicesSR } from '../allText/services';
 import { fadeIn, textVariant } from '../utils/motion';
 import { SectionWrapper } from '../hoc';
 import ServiceCard from './parts_of_components/ServiceCard';

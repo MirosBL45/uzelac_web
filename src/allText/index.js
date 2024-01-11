@@ -1,8 +1,4 @@
 import {
-    laser,
-    visual,
-    multisensory,
-    lighting,
     entertainment,
     concert,
     discoBall,
@@ -25,90 +21,6 @@ import {
     papovic,
     bwf,
 } from "../assets/forImages";
-
-export const navLinks = [
-    {
-        id: "about",
-        title: "About",
-    },
-    {
-        id: "work",
-        title: "Work",
-    },
-    {
-        id: "projects",
-        title: "Projects",
-    },
-    {
-        id: "feedbacks",
-        title: "Testimonials",
-    },
-    {
-        id: "contact",
-        title: "Contact",
-    },
-];
-
-export const navLinksSR = [
-    {
-        id: "about",
-        title: "O Meni",
-    },
-    {
-        id: "work",
-        title: "Moj Rad",
-    },
-    {
-        id: "projects",
-        title: "Projekti",
-    },
-    {
-        id: "feedbacks",
-        title: "Preporuke",
-    },
-    {
-        id: "contact",
-        title: "Kontakt",
-    },
-];
-
-const services = [
-    {
-        title: "Lighting Design",
-        icon: lighting,
-    },
-    {
-        title: "Laser Landscapes",
-        icon: laser,
-    },
-    {
-        title: "Visual Storytelling",
-        icon: visual,
-    },
-    {
-        title: "Multisensory Experiences",
-        icon: multisensory,
-    },
-];
-
-const servicesSR = [
-    {
-        title: "Dizajn Osvetljenja",
-        icon: lighting,
-    },
-    {
-        title: "Laserski Pejzaži",
-        icon: laser,
-    },
-    {
-        title: "Vizuelna Priča",
-        icon: visual,
-    },
-    {
-        title: "Multisenzorna Iskustva",
-        icon: multisensory,
-    },
-];
 
 const technologies = [
     {
@@ -449,4 +361,4 @@ const projectsSR = [
     },
 ];
 
-export { services, servicesSR, technologies, experiences, experiencesSR, testimonials, testimonialsSR, projects, projectsSR };
+export { technologies, experiences, experiencesSR, testimonials, testimonialsSR, projects, projectsSR };

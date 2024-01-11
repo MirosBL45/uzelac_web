@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 
 import { styles } from '../styles';
-import { navLinks, navLinksSR } from '../allText';
+import { navLinks, navLinksSR } from '../allText/navLinks';
 import { uziLogo, menu, close, iconSr, iconEn } from '../assets/forImages';
 
 function Navbar({ setLanguage, language }) {
