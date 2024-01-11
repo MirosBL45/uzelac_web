@@ -69,5 +69,4 @@ export {
   gabco,
   papovic,
   bwf,
-  domain,
 };

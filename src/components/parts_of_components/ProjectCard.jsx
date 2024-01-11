@@ -37,8 +37,8 @@ function ProjectCard({
                   target="_blank"
                   title={
                     language === 'eng'
-                      ? 'View the project on the web'
-                      : 'Pogledaj projekat na webu'
+                      ? 'View this project on the web'
+                      : 'Pogledaj ovaj projekat na webu'
                   }
                 >
                   <img
