@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 import { styles } from '../styles';
 import { SectionWrapper } from '../hoc';
 import { textVariant } from '../utils/motion';
-import { testimonials, testimonialsSR } from '../allText';
+import { testimonials, testimonialsSR } from '../allText/testimonials';
 
 function Feedbacks({ language }) {
   return (

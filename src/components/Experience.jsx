@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 import 'react-vertical-timeline-component/style.min.css';
 
 import { styles } from '../styles';
-import { experiences, experiencesSR } from '../allText';
+import { experiences, experiencesSR } from '../allText/experiences';
 import { SectionWrapper } from '../hoc';
 import { textVariant } from '../utils/motion';
 import ExpirienceCard from './parts_of_components/ExpirienceCard';

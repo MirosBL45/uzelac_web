@@ -1,11 +1,16 @@
 import uziLogo from "./uziLogo.png";
+
+
 import visual from "./visual.png";
 import multisensory from "./multisensory.png";
 import laser from "./laser.png";
 import lighting from "./lighting.png";
+
+
 import domain from "./domain.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
+
 
 import audio from "./tech/audio.png";
 import band from "./tech/band.png";
@@ -21,6 +26,7 @@ import musicWave from "./tech/music-wave.png";
 import concert from "./tech/concert.png";
 import spotLights from "./tech/spot-lights.png";
 
+
 import uziSmall from "./company/uziLogo-small.svg";
 import soundRay from "./company/soundRayLogo.svg";
 import skyMusic from "./company/skyMusicLogo.svg";
@@ -29,10 +35,11 @@ import skyMusic from "./company/skyMusicLogo.svg";
 import gabco from "./persons/gabco.jpg";
 import papovic from "./persons/papovic.jpg";
 
-import bwf from "./projects/bwf.jpg";
 
-import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
+import bwf from "./projects/bwf.jpg";
+import sensation from "./projects/sensation.jpg";
+import expo from "./projects/expo.jpg";
+
 
 import iconEn from "./flags/iconEn.png";
 import iconSr from "./flags/iconSr.png";
@@ -62,11 +69,11 @@ export {
   spotLights,
   uziSmall,
   domain,
-  jobit,
-  tripguide,
   iconSr,
   iconEn,
   gabco,
   papovic,
   bwf,
+  sensation,
+  expo,
 };

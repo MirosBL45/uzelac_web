@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 
 import { styles } from '../styles';
 import { SectionWrapper } from '../hoc';
-import { projects, projectsSR } from '../allText';
+import { projects, projectsSR } from '../allText/projects';
 import { textVariant, fadeIn } from '../utils/motion';
 
 function Works({ language }) {

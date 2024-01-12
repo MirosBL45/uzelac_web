@@ -1,6 +1,6 @@
 import { BallCanvas } from './canvas';
 import { SectionWrapper } from '../hoc';
-import { technologies } from '../allText';
+import { technologies } from '../allText/technologies';
 import { useState, useEffect } from 'react';
 
 function Tech() {
