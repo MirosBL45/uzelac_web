@@ -39,6 +39,7 @@ import papovic from "./persons/papovic.jpg";
 import bwf from "./projects/bwf.jpg";
 import sensation from "./projects/sensation.jpg";
 import expo from "./projects/expo.jpg";
+import arena from "./projects/arena.jpg";
 
 
 import iconEn from "./flags/iconEn.png";
@@ -76,4 +77,5 @@ export {
   bwf,
   sensation,
   expo,
+  arena
 };

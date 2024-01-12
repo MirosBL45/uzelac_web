@@ -2,6 +2,7 @@ import {
     bwf,
     sensation,
     expo,
+    arena,
 } from "../assets/forImages";
 
 export const projects = [
@@ -50,7 +51,7 @@ export const projects = [
     {
         name: "Expo Dubai",
         description:
-            "The Dubai Expo was a global exhibition gathering that provided an opportunity for different countries, companies and organizations to showcase their innovation, culture and technology. The focus was on topics such as sustainability, mobility and access to water, and the event attracted the attention of visitors from all over the world. In this project, I had the opportunity to create a unique lighting experience that reflected the richness of Serbian culture and innovation. My responsibilities included aspects of the lighting systems, with the aim of highlighting key elements of the pavilion and attracting visitors' attention.",
+            "The Dubai Expo was a global exhibition gathering that provided an opportunity for different countries, companies and organizations to showcase their innovation, culture and technology. The focus was on topics such as sustainability, mobility and access to water, and the event attracted the attention of visitors from all over the world. In this project, I had the opportunity to create a unique lighting experience that reflected the richness of Serbian culture and innovation. My responsibilities included aspects of the lighting systems, with the aim of highlighting key elements of the pavilion and attracting attention of visitors.",
         tags: [
             {
                 name: "lighting",
@@ -67,6 +68,27 @@ export const projects = [
         ],
         image: expo,
         source_code_link: "https://www.expo2020dubai.com/en/understanding-expo/participants/country-pavilions/serbia",
+    },
+    {
+        name: "Concerts Belgrade Arena",
+        description:
+            "The Belgrade Arena can accommodate more than 20,000 people, depending on the type of event. Numerous artists, including international acts like Jennifer Lopez, Celine Dion, and Madonna, as well as prominent Balkan performers like Zdravko Čolić, Dragana Mirković, Aca Lukas, and Zorica Brunclik, selected the Belgrade Arena as their venue of choice. At the various concerts I did, my responsibilities included setting up and managing the lighting systems, creating an atmosphere that suited the different performers and genres. In cooperation with the team, I developed creative and innovative approaches to setting up lighting effects, adapting them to the specifics of each concert. Through technical expertise, I have successfully implemented various lighting techniques, contributing to the overall visual experience.",
+        tags: [
+            {
+                name: "lighting",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "sound",
+                color: "pink-text-gradient",
+            },
+            {
+                name: "laser",
+                color: "green-text-gradient",
+            },
+        ],
+        image: arena,
+        source_code_link: "https://starkarena.co.rs/cir/arhiva-dogadjaja/",
     },
 ];
 
@@ -133,5 +155,26 @@ export const projectsSR = [
         ],
         image: expo,
         source_code_link: "https://www.expo2020dubai.com/en/understanding-expo/participants/country-pavilions/serbia",
+    },
+    {
+        name: "Koncerti beogradska Arena",
+        description:
+            "Beogradska Arena može primiti više od 20.000 ljudi u zavisnosti od vrste događaja. Mnogi izvođači su odabrali beogradksu Arenu za svoj nastup, među kojima su brojne balkanske zvezde kao što su: Zdravko Čolić, Dragana Mirković, Aca Lukas, Zorica Brunclik, a neki od svetskih izvođača koji su nastupali su: Jennifer Lopez, Celine Dion, Madonna. Na raznim koncetima koje sam radio moje odgovornosti su uključivale postavljanje i upravljanje svetlosnim sistemima, stvaranje atmosfere koja je odgovarala različitim izvođačima i žanrovima. U saradnji sa timom, razvijao sam kreativne i inovativne pristupe postavljanju svetlosnih efekata, prilagođavajući ih specifičnostima svakog koncerta. Kroz tehničku ekspertizu, uspešno sam implementirao različite tehnike osvetljenja, doprinoseći celokupnom vizuelnom doživljaju.",
+        tags: [
+            {
+                name: "rasveta",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "zvuk",
+                color: "pink-text-gradient",
+            },
+            {
+                name: "laser",
+                color: "green-text-gradient",
+            },
+        ],
+        image: arena,
+        source_code_link: "https://starkarena.co.rs/cir/arhiva-dogadjaja/",
     },
 ];
