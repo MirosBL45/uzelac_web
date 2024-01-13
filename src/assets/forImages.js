@@ -40,6 +40,7 @@ import bwf from "./projects/bwf.jpg";
 import sensation from "./projects/sensation.jpg";
 import expo from "./projects/expo.jpg";
 import arena from "./projects/arena.jpg";
+import mac from "./projects/mac.jpg";
 
 
 import iconEn from "./flags/iconEn.png";
@@ -77,5 +78,6 @@ export {
   bwf,
   sensation,
   expo,
-  arena
+  arena,
+  mac,
 };

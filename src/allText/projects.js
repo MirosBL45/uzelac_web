@@ -3,6 +3,7 @@ import {
     sensation,
     expo,
     arena,
+    mac,
 } from "../assets/forImages";
 
 export const projects = [
@@ -90,6 +91,27 @@ export const projects = [
         image: arena,
         source_code_link: "https://starkarena.co.rs/cir/arhiva-dogadjaja/",
     },
+    {
+        name: "Music Awards Ceremony",
+        description:
+            "I had the privilege of working as a lighting specialist on Southeast Europe's largest musical extravaganza, the Music Awards Ceremony, which honors accomplishments in the music business. I worked for a number of years on the team that produced the amazing lighting effects that go along with different music stars' performances. As part of my job, I had to set up and oversee lighting equipment to create a dynamic ambiance that enhanced the audience's overall experience. By utilizing my technical knowledge and creative approach, I was able to customize lighting effects to suit various performers and genres, effectively showcasing their performances.",
+        tags: [
+            {
+                name: "lighting",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "laser",
+                color: "green-text-gradient",
+            },
+            {
+                name: "sound",
+                color: "pink-text-gradient",
+            },
+        ],
+        image: mac,
+        source_code_link: "https://www.musicawardsceremony.com/",
+    },
 ];
 
 export const projectsSR = [
@@ -176,5 +198,26 @@ export const projectsSR = [
         ],
         image: arena,
         source_code_link: "https://starkarena.co.rs/cir/arhiva-dogadjaja/",
+    },
+    {
+        name: "Music Awards Ceremony",
+        description:
+            "Kao stručnjak za rasvetu, imao sam čast raditi na najvećem muzičkom spektaklu jugoistočne Evrope, Music Awards Ceremony, gde se nagrađuju dostignuća u muzičkoj industriji. Tokom nekoliko godina bio sam u timu koji je odgovoran za kreiranje spektakularnih svetlosnih efekata koji prate nastupe raznih muzičkih zvezda. Moja uloga je obuhvatala postavljanje i upravljanje svetlosnim sistemima kako bi se stvorila dinamična atmosfera koja doprinosi ukupnom doživljaju publike. Kroz kreativni pristup i tehničku stručnost, uspeo sam prilagoditi svetlosne efekte različitim izvođačima i žanrovima, ističući njihov nastup na najbolji način.",
+        tags: [
+            {
+                name: "rasveta",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "laser",
+                color: "green-text-gradient",
+            },
+            {
+                name: "zvuk",
+                color: "pink-text-gradient",
+            },
+        ],
+        image: mac,
+        source_code_link: "https://www.musicawardsceremony.com/",
     },
 ];
