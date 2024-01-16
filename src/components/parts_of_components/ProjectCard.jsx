@@ -13,14 +13,16 @@ function ProjectCard({
   language,
 }) {
   return (
-    <motion.div
-      className="mx-auto"
-      variants={fadeIn('up', 'spring', index * 0.5, 0.75)}
-    >
+    // <motion.div
+    //   className="mx-auto"
+    //   variants={fadeIn('up', 'spring', index * 0.5, 0.75)}
+    // >
+    <div className="mx-auto">
       <Tilt
         className="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full"
         options={{ max: 45, scale: 1, speed: 450 }}
       >
+        {/* <div className="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full"> */}
         <article>
           <div className="relative w-full h-[230px]">
             {/* image of project */}
@@ -64,8 +66,10 @@ function ProjectCard({
             ))}
           </div>
         </article>
+        {/* </div> */}
       </Tilt>
-    </motion.div>
+    </div>
+    // {/* </motion.div> */}
   );
 }
 

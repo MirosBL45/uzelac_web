@@ -7,27 +7,27 @@ import {
 } from "../assets/forImages";
 
 export const projects = [
-    // {
-    //     name: "Belgrade Tower",
-    //     description:
-    //         "This December 31st, the greatest party in Serbia took place at Belgrade Waterfront. As guests of Sava Promenada sailed into the new year, a spectacular light and pyrotechnic show above Belgrade Tower marked „the craziest night“ in the Serbian capital. This project's complexity was arranging the lasers, roto-heads on the tower's exterior and roof, and linking for all devices simultaneously. It was necessary to set up several lighting effects projections to accompany the music, and also the fireworks that were placed on the tower itself, and across from it.",
-    //     tags: [
-    //         {
-    //             name: "lighting",
-    //             color: "blue-text-gradient",
-    //         },
-    //         {
-    //             name: "laser",
-    //             color: "green-text-gradient",
-    //         },
-    //         {
-    //             name: "fireworks",
-    //             color: "pink-text-gradient",
-    //         },
-    //     ],
-    //     image: bwf,
-    //     source_code_link: "https://www.belgradewaterfront.com/en/events",
-    // },
+    {
+        name: "Belgrade Tower",
+        description:
+            "This December 31st, the greatest party in Serbia took place at Belgrade Waterfront. As guests of Sava Promenada sailed into the new year, a spectacular light and pyrotechnic show above Belgrade Tower marked „the craziest night“ in the Serbian capital. This project's complexity was arranging the lasers, roto-heads on the tower's exterior and roof, and linking for all devices simultaneously. It was necessary to set up several lighting effects projections to accompany the music, and also the fireworks that were placed on the tower itself, and across from it.",
+        tags: [
+            {
+                name: "lighting",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "laser",
+                color: "green-text-gradient",
+            },
+            {
+                name: "fireworks",
+                color: "pink-text-gradient",
+            },
+        ],
+        image: bwf,
+        source_code_link: "https://www.belgradewaterfront.com/en/events",
+    },
     {
         name: "White Sensation Belgrade",
         description:
@@ -115,27 +115,27 @@ export const projects = [
 ];
 
 export const projectsSR = [
-    // {
-    //     name: "Kula Beograd",
-    //     description:
-    //         "Ovog 31. decembra u Beogradu na vodi održana je najveća žurka u Srbiji. Dok su gosti Sava Promenade uplovili u novu godinu, spektakularna svetlosna i pirotehnička predstava iznad Kule Beograd obeležila je „najluđu noć“ u srpskoj prestonici. Složenost ovog projekta bila je uređenje lasera, roto-glava na spoljašnjosti i krovu kule, i povezivanje svih uređaja. Bilo je potrebno podesiti nekoliko projekcija svetlosnih efekata da prate muziku, a takođe i vatromet koji je bio postavljen na samoj kuli, i preko puta nje.",
-    //     tags: [
-    //         {
-    //             name: "rasveta",
-    //             color: "blue-text-gradient",
-    //         },
-    //         {
-    //             name: "laser",
-    //             color: "green-text-gradient",
-    //         },
-    //         {
-    //             name: "vatromet",
-    //             color: "pink-text-gradient",
-    //         },
-    //     ],
-    //     image: bwf,
-    //     source_code_link: "https://www.belgradewaterfront.com/en/events",
-    // },
+    {
+        name: "Kula Beograd",
+        description:
+            "Ovog 31. decembra u Beogradu na vodi održana je najveća žurka u Srbiji. Dok su gosti Sava Promenade uplovili u novu godinu, spektakularna svetlosna i pirotehnička predstava iznad Kule Beograd obeležila je „najluđu noć“ u srpskoj prestonici. Složenost ovog projekta bila je uređenje lasera, roto-glava na spoljašnjosti i krovu kule, i povezivanje svih uređaja. Bilo je potrebno podesiti nekoliko projekcija svetlosnih efekata da prate muziku, a takođe i vatromet koji je bio postavljen na samoj kuli, i preko puta nje.",
+        tags: [
+            {
+                name: "rasveta",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "laser",
+                color: "green-text-gradient",
+            },
+            {
+                name: "vatromet",
+                color: "pink-text-gradient",
+            },
+        ],
+        image: bwf,
+        source_code_link: "https://www.belgradewaterfront.com/en/events",
+    },
     {
         name: "White Sensation Beograd",
         description:
