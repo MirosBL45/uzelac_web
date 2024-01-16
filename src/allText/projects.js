@@ -202,7 +202,7 @@ export const projectsSR = [
     {
         name: "Music Awards Ceremony",
         description:
-            "Kao stručnjak za rasvetu, imao sam čast raditi na najvećem muzičkom spektaklu jugoistočne Evrope, Music Awards Ceremony, gde se nagrađuju dostignuća u muzičkoj industriji. Tokom nekoliko godina bio sam u timu koji je odgovoran za kreiranje spektakularnih svetlosnih efekata koji prate nastupe raznih muzičkih zvezda. Moja uloga je obuhvatala postavljanje i upravljanje svetlosnim sistemima kako bi se stvorila dinamična atmosfera koja doprinosi ukupnom doživljaju publike. Kroz kreativni pristup i tehničku stručnost, uspeo sam prilagoditi svetlosne efekte različitim izvođačima i žanrovima, ističući njihov nastup na najbolji način.",
+            "Kao stručnjak za rasvetu, imao sam čast raditi na najvećem muzičkom spektaklu jugoistočne Evrope, Music Awards Ceremony, gde se nagrađuju dostignuća u muzičkoj industriji. Tokom nekoliko godina bio sam u timu koji je odgovoran za kreiranje spektakularnih svetlosnih efekata koji prate nastupe raznih muzičkih zvezda. Moja uloga je obuhvatala postavljanje i upravljanje svetlosnim sistemima kako bi se stvorila dinamična atmosfera koja doprinosi ukupnom doživljaju publike. Kroz kreativni pristup i tehničku stručnost, uspeo sam prilagoditi svetlosne efekte različitim izvođačima i žanrovima, ističući njihov nastup na najbolji mogući način.",
         tags: [
             {
                 name: "rasveta",
