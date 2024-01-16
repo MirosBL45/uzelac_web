@@ -41,6 +41,7 @@ import sensation from "./projects/sensation.jpg";
 import expo from "./projects/expo.jpg";
 import arena from "./projects/arena.jpg";
 import mac from "./projects/mac.jpg";
+import mileva from "./projects/mileva.jpg";
 
 
 import iconEn from "./flags/iconEn.png";
@@ -80,4 +81,5 @@ export {
   expo,
   arena,
   mac,
+  mileva,
 };

@@ -4,6 +4,7 @@ import {
     expo,
     arena,
     mac,
+    mileva,
 } from "../assets/forImages";
 
 export const projects = [
@@ -59,10 +60,6 @@ export const projects = [
                 color: "blue-text-gradient",
             },
             {
-                name: "sound",
-                color: "pink-text-gradient",
-            },
-            {
                 name: "laser",
                 color: "green-text-gradient",
             },
@@ -111,6 +108,19 @@ export const projects = [
         ],
         image: mac,
         source_code_link: "https://www.musicawardsceremony.com/",
+    },
+    {
+        name: "TV series Radio Mileva",
+        description:
+            "The comedy „Radio Mileva” follows the everyday lives of Mileva, Natalija and Sonja, three generations of the Majstorović family who live under the same roof. Mileva is the head of the house, knows everything, knows everything and understands everything. A retired woman who spent her working life in the role of secretary to the President of the Municipality, which she is extremely proud of. As a lighting expert on the long-running TV comedy, my work has been instrumental in creating the visual identity of the series that has been on the air for three years. I am responsible for setting up and managing lighting systems during filming, adapting them to the specifics of each comic scene. Through creative approaches, I was able to emphasize the humorous elements of the series and maintain the consistency of the lighting style throughout the long run of the production.",
+        tags: [
+            {
+                name: "lighting",
+                color: "blue-text-gradient",
+            },
+        ],
+        image: mileva,
+        source_code_link: "https://www.imdb.com/title/tt13729210/",
     },
 ];
 
@@ -167,10 +177,6 @@ export const projectsSR = [
                 color: "blue-text-gradient",
             },
             {
-                name: "zvuk",
-                color: "pink-text-gradient",
-            },
-            {
                 name: "laser",
                 color: "green-text-gradient",
             },
@@ -219,5 +225,18 @@ export const projectsSR = [
         ],
         image: mac,
         source_code_link: "https://www.musicawardsceremony.com/",
+    },
+    {
+        name: "TV serija Radio Mileva",
+        description:
+            "Komedija „Radio Mileva” prati svakodnevicu Mileve, Natalije i Sonje, tri generacije porodice Majstorović koje žive pod istim krovom. Mileva je glava kuće, sve zna, sve ume i u sve se razume. Penzionerka koja je radni vek provela u ulozi sekretarice predsednika Opštine na šta je izuzetno ponosna. Kao stručnjak za rasvetu na dugotrajnoj TV komediji, moj rad je bio ključan u stvaranju vizualnog identiteta serije koja se emituje već tri godine. Odgovoran sam za postavljanje i upravljanje svetlosnim sistemima tokom snimanja, prilagođavajući ih specifičnostima svake komične scene. Kroz kreativne pristupe, uspeo sam naglasiti humoristične elemente serije i održavati konzistentnost svetlosnog stila tokom dugog trajanja produkcije.",
+        tags: [
+            {
+                name: "rasveta",
+                color: "blue-text-gradient",
+            },
+        ],
+        image: mileva,
+        source_code_link: "https://www.imdb.com/title/tt13729210/",
     },
 ];
