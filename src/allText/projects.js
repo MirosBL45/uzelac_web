@@ -28,27 +28,27 @@ export const projects = [
     //     image: bwf,
     //     source_code_link: "https://www.belgradewaterfront.com/en/events",
     // },
-    // {
-    //     name: "White Sensation Belgrade",
-    //     description:
-    //         "White Sensation is a series of world famous electronic music events. They are known for their unique atmosphere where visitors wear white clothes, creating a spectacular visual experience. In this project, I had the opportunity to participate in the organization of the White Sensation event in Belgrade. My role included aspects of lighting systems. I actively contributed to the creation of a unique atmosphere, following the white theme of the event. Through cooperation with a team of professionals, I efficiently managed the lighting equipment, achieving the desired visual experience.",
-    //     tags: [
-    //         {
-    //             name: "lighting",
-    //             color: "blue-text-gradient",
-    //         },
-    //         {
-    //             name: "sound",
-    //             color: "pink-text-gradient",
-    //         },
-    //         {
-    //             name: "laser",
-    //             color: "green-text-gradient",
-    //         },
-    //     ],
-    //     image: sensation,
-    //     source_code_link: "https://sensationbelgrade.wordpress.com/",
-    // },
+    {
+        name: "White Sensation Belgrade",
+        description:
+            "White Sensation is a series of world famous electronic music events. They are known for their unique atmosphere where visitors wear white clothes, creating a spectacular visual experience. In this project, I had the opportunity to participate in the organization of the White Sensation event in Belgrade. My role included aspects of lighting systems. I actively contributed to the creation of a unique atmosphere, following the white theme of the event. Through cooperation with a team of professionals, I efficiently managed the lighting equipment, achieving the desired visual experience.",
+        tags: [
+            {
+                name: "lighting",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "sound",
+                color: "pink-text-gradient",
+            },
+            {
+                name: "laser",
+                color: "green-text-gradient",
+            },
+        ],
+        image: sensation,
+        source_code_link: "https://sensationbelgrade.wordpress.com/",
+    },
     {
         name: "Expo Dubai",
         description:
@@ -136,27 +136,27 @@ export const projectsSR = [
     //     image: bwf,
     //     source_code_link: "https://www.belgradewaterfront.com/en/events",
     // },
-    // {
-    //     name: "White Sensation Beograd",
-    //     description:
-    //         "White Sensation je serija svetski poznatih elektronskih muzičkih događaja. Oni su poznati po svojoj jedinstvenoj atmosferi gde posetioci oblače belu odeću, stvarajući spektakularan vizuelni doživljaj. U ovom projektu imao sam priliku da učestvujem u organizaciji White Sensation događaja u Beogradu. Moja uloga je obuhvatala aspekte svetlosnih sistema. Aktivno sam doprineo stvaranju jedinstvene atmosfere, prateći belu temu događaja. Kroz saradnju sa timom profesionalaca, efikasno sam upravljao svetlosnom opremom, postižući željeni vizuelni doživljaj.",
-    //     tags: [
-    //         {
-    //             name: "rasveta",
-    //             color: "blue-text-gradient",
-    //         },
-    //         {
-    //             name: "zvuk",
-    //             color: "pink-text-gradient",
-    //         },
-    //         {
-    //             name: "laser",
-    //             color: "green-text-gradient",
-    //         },
-    //     ],
-    //     image: sensation,
-    //     source_code_link: "https://sensationbelgrade.wordpress.com/",
-    // },
+    {
+        name: "White Sensation Beograd",
+        description:
+            "White Sensation je serija svetski poznatih elektronskih muzičkih događaja. Oni su poznati po svojoj jedinstvenoj atmosferi gde posetioci oblače belu odeću, stvarajući spektakularan vizuelni doživljaj. U ovom projektu imao sam priliku da učestvujem u organizaciji White Sensation događaja u Beogradu. Moja uloga je obuhvatala aspekte svetlosnih sistema. Aktivno sam doprineo stvaranju jedinstvene atmosfere, prateći belu temu događaja. Kroz saradnju sa timom profesionalaca, efikasno sam upravljao svetlosnom opremom, postižući željeni vizuelni doživljaj.",
+        tags: [
+            {
+                name: "rasveta",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "zvuk",
+                color: "pink-text-gradient",
+            },
+            {
+                name: "laser",
+                color: "green-text-gradient",
+            },
+        ],
+        image: sensation,
+        source_code_link: "https://sensationbelgrade.wordpress.com/",
+    },
     {
         name: "Expo Dubaji",
         description:
