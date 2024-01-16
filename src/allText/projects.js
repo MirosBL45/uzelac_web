@@ -168,7 +168,7 @@ export const projectsSR = [
         source_code_link: "https://sensationbelgrade.wordpress.com/",
     },
     {
-        name: "Expo Dubaji",
+        name: "Expo Dubai",
         description:
             "Expo u Dubaiju bilo je svetsko izložbeno okupljanje koje je predstavljalo priliku za različite zemlje, kompanije i organizacije da prikažu svoje inovacije, kulturu i tehnologiju. Fokus je bio na teme poput održivosti, mobilnosti i pristupa vodi, a događaj je privukao pažnju posetilaca iz celog sveta. U ovom projeku imao sam priliku da stvorim jedinstveno svetlosno iskustvo koje je odražavalo bogatstvo srpske kulture i inovacija. Moje odgovornosti su obuhvatile aspekte rasvetnih sistema, sa ciljem da istaknem ključne elemente paviljona i privučem pažnju posetilaca.",
         tags: [
