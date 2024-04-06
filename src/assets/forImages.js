@@ -1,10 +1,10 @@
 import uziLogo from "./uziLogo.png";
 
 
-import visual from "./visual.png";
-import multisensory from "./multisensory.png";
-import laser from "./laser.png";
-import lighting from "./lighting.png";
+import visual from "./overview/visual.webp";
+import multisensory from "./overview/multisensory.webp";
+import laser from "./overview/laser.webp";
+import lighting from "./overview/lighting.webp";
 
 
 import domain from "./domain.png";
@@ -32,9 +32,9 @@ import soundRay from "./company/soundRayLogo.svg";
 import skyMusic from "./company/skyMusicLogo.svg";
 
 
-import gabco from "./persons/gabco.jpg";
-import papovic from "./persons/papovic.jpg";
-import gojko from "./persons/gojko.jpg";
+import gabco from "./persons/gabco.webp";
+import papovic from "./persons/papovic.webp";
+import gojko from "./persons/gojko.webp";
 
 
 import bwf from "./projects/bwf.jpg";

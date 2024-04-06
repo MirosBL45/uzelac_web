@@ -1,28 +1,31 @@
-import { SectionWrapper } from "../hoc";
+import { SectionWrapper } from '../hoc';
 
 function Footer({ language }) {
   return (
     <div>
-      {language === "eng" ? (
+      {language === 'eng' ? (
         <p className="text-secondary text-center sm:text-[17px] xs:text-[15px] text-[13px]">
-          Made with <span className="text-red-700">&#9829;</span> by{" "}
+          Made with <span className="text-red-700">&#9829;</span> by{' '}
           <a
+            aria-label="Send mail to jovicmiroslav88@gmail.com"
             title="jovicmiroslav88@gmail.com"
             className="text-[#915eff] hover:text-[hsl(259,100%,75%)]"
             href="mailto:jovicmiroslav88@gmail.com"
           >
             Miroslav Jovic
           </a>
-          . Feel free to reach out to me via{" "}
+          . Feel free to reach out to me via{' '}
           <a
+            aria-label="Send mail to jovicmiroslav88@gmail.com"
             title="jovicmiroslav88@gmail.com"
             className="text-[#915eff] hover:text-[hsl(259,100%,75%)]"
             href="mailto:jovicmiroslav88@gmail.com"
           >
             email
-          </a>{" "}
-          or check out my{" "}
+          </a>{' '}
+          or check out my{' '}
           <a
+            aria-label="Visit Jovic Miroslav GitHub"
             className="text-[#915eff] hover:text-[hsl(259,100%,75%)]"
             target="_blank"
             href="https://github.com/MirosBL45"
@@ -33,28 +36,31 @@ function Footer({ language }) {
         </p>
       ) : (
         <p className="text-secondary text-center sm:text-[17px] xs:text-[15px] text-[13px]">
-          Napravio od <span className="text-red-700">&#9829;</span>{" "}
+          Napravio od <span className="text-red-700">&#9829;</span>{' '}
           <a
+            aria-label="Javi se na jovicmiroslav88@gmail.com"
             title="jovicmiroslav88@gmail.com"
             className="text-[#915eff] hover:text-[hsl(259,100%,75%)]"
             href="mailto:jovicmiroslav88@gmail.com"
           >
             Miroslav Jović
           </a>
-          . Slobodno mi se javite putem{" "}
+          . Slobodno mi se javite putem{' '}
           <a
+            aria-label="Javi se na jovicmiroslav88@gmail.com"
             title="jovicmiroslav88@gmail.com"
             className="text-[#915eff] hover:text-[hsl(259,100%,75%)]"
             href="mailto:jovicmiroslav88@gmail.com"
           >
             mejla
-          </a>{" "}
-          ili pogledajte moj{" "}
+          </a>{' '}
+          ili pogledajte moj{' '}
           <a
             className="text-[#915eff] hover:text-[hsl(259,100%,75%)]"
             target="_blank"
             href="https://github.com/MirosBL45"
             title="GitHub profil - Miroslav Jović"
+            aria-label="Javi se na GitHub profil - Miroslav Jović"
           >
             GitHub profil
           </a>
@@ -64,4 +70,4 @@ function Footer({ language }) {
   );
 }
 
-export default SectionWrapper(Footer, "");
+export default SectionWrapper(Footer, '');

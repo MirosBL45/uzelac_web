@@ -2,7 +2,7 @@ import { motion } from 'framer-motion';
 
 import { styles } from '../styles';
 import { ComputersCanvas } from './canvas';
-import danceArena from '../assets/images/dance_arena.png';
+import danceArena from '../assets/images/dance_arena.webp';
 
 function Hero({ language }) {
   return (
