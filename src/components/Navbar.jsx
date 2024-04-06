@@ -27,7 +27,12 @@ function Navbar({ setLanguage, language }) {
             window.scrollTo(0, 0);
           }}
         >
-          <img src={uziLogo} alt="logo" className="object-cover" />
+          <img
+            src={uziLogo}
+            alt="Uzelac Light logo"
+            title="Uzelac Light"
+            className="object-cover"
+          />
         </Link>
         {/* list of links on page */}
         <ul className="list-none hidden sm:flex flex-row gap-10">

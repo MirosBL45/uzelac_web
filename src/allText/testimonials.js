@@ -1,6 +1,7 @@
 import {
     gabco,
     papovic,
+    gojko,
 } from "../assets/forImages";
 
 export const testimonials = [
@@ -22,11 +23,11 @@ export const testimonials = [
     },
     {
         testimonial:
-            "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-        name: "Lisa Wang",
-        designation: "CTO",
-        company: "456 Enterprises",
-        image: "https://randomuser.me/api/portraits/women/6.jpg",
+            "Uzelac is an incredibly talented lighter. He has an extraordinary ability to create atmosphere and lighting that perfectly suits any scene. Working with him means having a reliable person who will make sure that every detail is more than flawlessly lit. His brilliant creativity and expertise bring innovative solutions that add depth and atmosphere to any project, and it is truly a privilege to work with him that any filmmaker or team should take advantage of. His passion for lighting, precision and attention to detail ensure that every scene or event radiates quality and refinement. Uzelac is an irreplaceable part of any project that requires top-quality lighting.",
+        name: "Srdjan Gojković",
+        designation: "Gaffer",
+        company: "Film Industry",
+        image: gojko,
     },
 ];
 
@@ -49,10 +50,10 @@ export const testimonialsSR = [
     },
     {
         testimonial:
-            "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-        name: "Lisa Wang",
-        designation: "CTO",
-        company: "456 Enterprises",
-        image: "https://randomuser.me/api/portraits/women/6.jpg",
+            "Uzelac je neverovatno talentovan lighter. Ima izvanrednu sposobnost da stvori atmosferu i rasvetu koja savršeno odgovara svakoj sceni. Raditi sa njim znači imati pouzdanog čoveka koji će se pobrinuti da svaki detalj bude i više nego besprekorno osvetljen. Njegova sjajna kreativnost i stručnost donose inovativna rešenja koja dodaju dubinu i atmosferu svakom projektu, te je zaista privilegija raditi sa njim koju svaki filmski reditelj ili tim treba iskoristiti. Njegova strast prema rasveti, preciznost i pažnja prema  svim detaljima osiguravaju da svaka scena ili događaj zrači kvalitetom i prefinjenošću. Uzelac je nezamjenjiv deo bilo kojeg projekta koji zahteva vrhunsku rasvetu.",
+        name: "Srdjan Gojković",
+        designation: "Gaffer",
+        company: "Film Industry",
+        image: gojko,
     },
 ];
