@@ -35,7 +35,7 @@ function ProjectCard({
             <div className="absolute inset-0 flex justify-end m-3 card-img_hover">
               <div>
                 <a
-                  className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
+                  className="black-gradient w-[85px] h-[27px] rounded-full flex justify-around items-center cursor-pointer"
                   href={source_code_link}
                   target="_blank"
                   title={
@@ -48,8 +48,11 @@ function ProjectCard({
                     src={domain}
                     alt="Uzelac Light project link"
                     title={`Uzelac Light project link`}
-                    className="object-contain w-1/2 h-1/2"
+                    className="object-contain h-1/2"
                   />
+                  <span className="text-[12px]">
+                    {language === 'eng' ? ' See Live' : ' Vidi Uživo'}
+                  </span>
                 </a>
               </div>
             </div>
