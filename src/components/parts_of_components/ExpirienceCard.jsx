@@ -17,7 +17,8 @@ function ExpirienceCard({ experience }) {
         <div className="flex justify-center items-center w-full h-full">
           <img
             src={experience.icon}
-            alt={experience.company_name}
+            alt={`Uzelac Light ${experience.company_name}`}
+            title={`Uzelac Light ${experience.company_name}`}
             className="w-[60%] h-[60%] object-contain"
           />
         </div>

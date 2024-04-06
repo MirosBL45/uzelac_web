@@ -34,7 +34,12 @@ function Hero({ language }) {
       </div>
       <ComputersCanvas />
       <div className="onMobile">
-        <img className="rounded-[20px]" src={danceArena} alt="danceArena" />
+        <img
+          className="rounded-[20px]"
+          src={danceArena}
+          alt="Uzelac Light Dance Arena"
+          title="Uzelac Light Dance Arena"
+        />
       </div>
       {/* scroll div */}
       <div className="absolute xs:bottom-10 bottom-[50px] w-full flex justify-center items-center">

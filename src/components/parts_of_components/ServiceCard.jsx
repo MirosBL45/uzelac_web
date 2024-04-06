@@ -7,7 +7,12 @@ function ServiceCard({ index, title, icon }) {
           className="bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col"
           options={{ max: 45, scale: 1, speed: 450 }}
         >
-          <img src={icon} alt={title} className="w-16 h-16 object-contain" />
+          <img
+            src={icon}
+            alt={`Uzelac Light ${title}`}
+            title={`Uzelac Light ${title}`}
+            className="w-16 h-16 object-contain"
+          />
           <h3 className="font-bold text-center text-white text-[20px]">
             {title}
           </h3>
