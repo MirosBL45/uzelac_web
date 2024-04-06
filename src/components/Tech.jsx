@@ -18,7 +18,11 @@ function Tech() {
       {windowWidth > 650 ? (
         <div className="flex flex-row flex-wrap justify-center gap-10">
           {technologies.map((technology) => (
-            <div key={technology.name} className="w-28 h-28">
+            <div
+              title={`Uzelac Light ${technology.name}`}
+              key={technology.name}
+              className="w-28 h-28"
+            >
               <BallCanvas icon={technology.icon} />
             </div>
           ))}
@@ -32,7 +36,8 @@ function Tech() {
             >
               <img
                 src={technology.icon}
-                alt={technology.name}
+                alt={`Uzelac Light ${technology.name}`}
+                title={`Uzelac Light ${technology.name}`}
                 className="w-full"
               />
             </div>

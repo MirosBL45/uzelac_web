@@ -16,55 +16,55 @@ import {
 
 export const technologies = [
     {
-        name: "discoBall",
+        name: "Disco Ball",
         icon: discoBall,
     },
     {
-        name: "audio",
+        name: "Audio",
         icon: audio,
     },
     {
-        name: "entertainment",
+        name: "Entertainment",
         icon: entertainment,
     },
     {
-        name: "concert",
+        name: "Concert",
         icon: concert,
     },
     {
-        name: "movieFrame",
+        name: "Movie Frame",
         icon: movieFrame,
     },
     {
-        name: "movieTheater",
+        name: "Movie Theater",
         icon: movieTheater,
     },
     {
-        name: "musicWave",
+        name: "Music Wave",
         icon: musicWave,
     },
     {
-        name: "stage",
+        name: "Stage",
         icon: stage,
     },
     {
-        name: "spotLights",
+        name: "Spot Lights",
         icon: spotLights,
     },
     {
-        name: "spotlight",
+        name: "Spot light",
         icon: spotlight,
     },
     {
-        name: "concertStar",
+        name: "Concert Star",
         icon: concertStar,
     },
     {
-        name: "band",
+        name: "Band",
         icon: band,
     },
     {
-        name: "equalizer",
+        name: "Equalizer",
         icon: equalizer,
     },
 ];

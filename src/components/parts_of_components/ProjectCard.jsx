@@ -23,12 +23,13 @@ function ProjectCard({
         options={{ max: 45, scale: 1, speed: 450 }}
       >
         {/* <div className="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full"> */}
-        <article>
+        <article title={`Uzelac Light ${name}`}>
           <div className="relative w-full h-[230px]">
             {/* image of project */}
             <img
               src={image}
-              alt={name}
+              alt={`Uzelac Light ${name}`}
+              title={`Uzelac Light ${name}`}
               className="w-full h-full object-cover rounded-2xl"
             />
             <div className="absolute inset-0 flex justify-end m-3 card-img_hover">
@@ -45,7 +46,8 @@ function ProjectCard({
                 >
                   <img
                     src={domain}
-                    alt="project link"
+                    alt="Uzelac Light project link"
+                    title={`Uzelac Light project link`}
                     className="object-contain w-1/2 h-1/2"
                   />
                 </a>

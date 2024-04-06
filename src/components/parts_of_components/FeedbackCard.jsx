@@ -16,7 +16,7 @@ function FeedbackCard({
       variants={fadeIn('', 'spring', index * 0.5, 0.75)}
       className="bg-black-200 p-10 rounded-3xl w-[320px] xs:w-[500px] mx-auto"
     >
-      <article>
+      <article title={`Feedback for Uzelac Light by ${name}`}>
         <p className="text-white font-black text-[38px] xs:text-[48px]">"</p>
         <div className="mt-[-20px]">
           <p className="text-white tracking-wider text-[14px] xs:text-[18px]">
@@ -33,7 +33,8 @@ function FeedbackCard({
             </div>
             <img
               src={image}
-              alt={`feedback-by-${name}`}
+              alt={`Feedback for Uzelac Light by ${name}`}
+              title={`Feedback for Uzelac Light by ${name}`}
               className="w-10 h-10 rounded-full object-cover"
             />
           </div>
