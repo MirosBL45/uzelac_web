@@ -20,7 +20,7 @@ function FeedbackCard({
     <motion.div
       variants={fadeIn('', 'spring', index * 0.5, 0.75)}
       className="bg-black-200 p-10 rounded-3xl w-[320px] xs:w-[500px] mx-auto"
-      id={`${index}text`}
+      id={`${index}testimonial`}
     >
       <article title={`Feedback for Uzelac Light by ${name}`}>
         <p className="text-white font-black text-[38px] xs:text-[48px]">"</p>
@@ -39,7 +39,7 @@ function FeedbackCard({
             )}
             {showFullText && (
               <a
-                href={`#${index}text`}
+                href={`#${index}testimonial`}
                 onClick={toggleText}
                 className="text-readMore underline cursor-pointer inline-block pt-[15px] pr-[15px] pb-[15px]"
               >
