@@ -34,7 +34,7 @@ function FeedbackCard({
                 onClick={toggleText}
                 className="text-readMore underline cursor-pointer inline-block pt-[15px] pr-[15px] pb-[15px]"
               >
-                Read more
+                {language === 'eng' ? 'Read more' : 'Opširnije'}
               </a>
             )}
             {showFullText && (
@@ -43,7 +43,7 @@ function FeedbackCard({
                 onClick={toggleText}
                 className="text-readMore underline cursor-pointer inline-block pt-[15px] pr-[15px] pb-[15px]"
               >
-                Show less
+                {language === 'eng' ? 'Show less' : 'Prikaži manje'}
               </a>
             )}
           </div>
