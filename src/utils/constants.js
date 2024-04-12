@@ -1,0 +1,3 @@
+export const SERVICE_BASE = import.meta.env.VITE_REACT_APP_PUBLIC_SERVICE_KEY
+export const TEMPLATE_BASE = import.meta.env.VITE_REACT_APP_PUBLIC_TEMPLATE_KEY
+export const PUBLIC_BASE = import.meta.env.VITE_REACT_APP_PUBLIC_MAIN_PUBLIC_KEY

@@ -7,6 +7,8 @@ import { EarthCanvas } from './canvas';
 import { SectionWrapper } from '../hoc';
 import { slideIn } from '../utils/motion';
 
+import { SERVICE_BASE, TEMPLATE_BASE, PUBLIC_BASE } from '../utils/constants';
+
 function Contact({ language }) {
   const formRef = useRef();
   const [loading, setLoading] = useState(false);
@@ -15,12 +17,7 @@ function Contact({ language }) {
     e.preventDefault();
     setLoading(true);
     emailjs
-      .sendForm(
-        'service_i3rs6cc',
-        'template_okfabjh',
-        formRef.current,
-        'o2jP32BE4AwKYKPs8'
-      )
+      .sendForm(SERVICE_BASE, TEMPLATE_BASE, formRef.current, PUBLIC_BASE)
       .then(
         () => {
           setLoading(false);
