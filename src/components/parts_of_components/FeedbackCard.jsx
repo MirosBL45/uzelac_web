@@ -3,6 +3,8 @@ import { useState } from 'react';
 
 import { fadeIn } from '../../utils/motion';
 
+import { splitContent } from '../../utils/functions';
+
 function FeedbackCard({
   index,
   testimonial,
@@ -23,16 +25,20 @@ function FeedbackCard({
       id={`${index}testimonial`}
     >
       <article title={`Feedback for Uzelac Light by ${name}`}>
-        <p className="text-white font-black text-[38px] xs:text-[48px]">"</p>
+        <p className="text-description font-black text-[38px] xs:text-[48px]">
+          "
+        </p>
         <div className="mt-[-20px]">
           <div>
-            <p className="text-white tracking-wider text-[14px] xs:text-[18px]">
-              {showFullText ? testimonial : testimonial.split('. ')[0] + '.'}
+            <p className="text-description tracking-wider text-[15px] xs:text-[16px]">
+              {showFullText
+                ? splitContent(testimonial)
+                : testimonial.split('. ')[0] + '.'}
             </p>
             {!showFullText && (
               <a
                 onClick={toggleText}
-                className="text-readMore underline cursor-pointer inline-block pt-[15px] pr-[15px] pb-[15px]"
+                className="text-readMore underline cursor-pointer inline-block pt-[15px] pr-[15px] pb-[15px] text-[13px] xs:text-[15px]"
               >
                 {language === 'eng' ? 'Read more' : 'Opširnije'}
               </a>
@@ -41,7 +47,7 @@ function FeedbackCard({
               <a
                 href={`#${index}testimonial`}
                 onClick={toggleText}
-                className="text-readMore underline cursor-pointer inline-block pt-[15px] pr-[15px] pb-[15px]"
+                className="text-readMore underline cursor-pointer inline-block pt-[15px] pr-[15px] pb-[15px] text-[13px] xs:text-[15px]"
               >
                 {language === 'eng' ? 'Show less' : 'Prikaži manje'}
               </a>
@@ -49,7 +55,7 @@ function FeedbackCard({
           </div>
           <div className="mt-7 flex justify-between items-center gap-1">
             <div className="flex-1 flex flex-col">
-              <p className="text-white font-medium text-[16px]">
+              <p className="text-description font-medium text-[14px]">
                 <span className="blue-text-gradient">@</span> {name}
               </p>
               <p className="mt-1 text-secondary text-[12px]">

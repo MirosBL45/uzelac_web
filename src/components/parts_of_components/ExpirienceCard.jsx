@@ -40,7 +40,7 @@ function ExpirienceCard({ experience }) {
           {experience.points.map((point, index) => (
             <li
               key={`expirience-point-${index}`}
-              className="text-white-100 text-[14px] pl-1 tracking-wider"
+              className="text-description text-[15px] xs:text-[16px] pl-1 tracking-wider"
             >
               {point}
             </li>

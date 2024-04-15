@@ -20,7 +20,7 @@ function Navbar({ setLanguage, language }) {
       <div className="w-full flex justify-between items-center max-w-7xl mx-auto">
         {/* logo with link to back home */}
         <Link
-          className="flex items-center gap-2"
+          className="flex items-center gap-2 w-[140px]"
           to={'/'}
           onClick={() => {
             setActive('');
@@ -43,10 +43,12 @@ function Navbar({ setLanguage, language }) {
                   key={link.id}
                   className={`${
                     link.id === 'contact'
-                      ? 'bg-[#915eff] text-[#f5af19] rounded-2xl px-5 py-2'
+                      ? 'bg-[#915eff] rounded-2xl px-5 py-2'
                       : ''
                   } ${
-                    active === link.title ? 'text-white' : 'text-secondary'
+                    active === link.title
+                      ? 'text-white border-b-2'
+                      : 'text-link'
                   } hover:text-white text-[18px] font-medium cursor-pointer flex justify-center items-center`}
                 >
                   <a href={`#${link.id}`}>{link.title}</a>
@@ -58,10 +60,12 @@ function Navbar({ setLanguage, language }) {
                   key={link.id}
                   className={`${
                     link.id === 'contact'
-                      ? 'bg-[#915eff] text-[#f5af19] rounded-2xl px-5 py-2'
+                      ? 'bg-[#915eff] rounded-2xl px-5 py-2'
                       : ''
                   } ${
-                    active === link.title ? 'text-white' : 'text-secondary'
+                    active === link.title
+                      ? 'text-white border-b-2'
+                      : 'text-link'
                   } hover:text-white text-[18px] font-medium cursor-pointer flex justify-center items-center`}
                 >
                   <a href={`#${link.id}`}>{link.title}</a>

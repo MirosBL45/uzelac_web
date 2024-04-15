@@ -1,7 +1,8 @@
 import { Tilt } from 'react-tilt';
 import { domain } from '../../assets/forImages';
-import { motion } from 'framer-motion';
-import { fadeIn } from '../../utils/motion';
+import { useState } from 'react';
+
+import { splitContent } from '../../utils/functions';
 
 function ProjectCard({
   index,
@@ -12,17 +13,16 @@ function ProjectCard({
   source_code_link,
   language,
 }) {
+  const [showFullText, setShowFullText] = useState(false);
+
+  const toggleText = () => setShowFullText(!showFullText);
+
   return (
-    // <motion.div
-    //   className="mx-auto"
-    //   variants={fadeIn('up', 'spring', index * 0.5, 0.75)}
-    // >
-    <div className="mx-auto">
+    <div id={`${index}project`} className="mx-auto">
       <Tilt
         className="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full"
         options={{ max: 45, scale: 1, speed: 450 }}
       >
-        {/* <div className="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full"> */}
         <article title={`Uzelac Light ${name}`}>
           <div className="relative w-full h-[230px]">
             {/* image of project */}
@@ -60,7 +60,28 @@ function ProjectCard({
           {/* text to describe work and projects */}
           <div className="mt-5">
             <h3 className="text-white font-bold text-[24px]">{name}</h3>
-            <p className="text-secondary mt-2 text-[14px]">{description}</p>
+            <p className="text-description mt-2 text-[15px] xs:text-[16px]">
+              {showFullText
+                ? splitContent(description)
+                : description.split('. ')[0] + '.'}
+            </p>
+            {!showFullText && (
+              <a
+                onClick={toggleText}
+                className="text-readMore underline cursor-pointer inline-block pt-[15px] pr-[15px] pb-[15px] text-[13px] xs:text-[15px]"
+              >
+                {language === 'eng' ? 'Read more' : 'Opširnije'}
+              </a>
+            )}
+            {showFullText && (
+              <a
+                href={`#${index}project`}
+                onClick={toggleText}
+                className="text-readMore underline cursor-pointer inline-block pt-[15px] pr-[15px] pb-[15px] text-[13px] xs:text-[15px]"
+              >
+                {language === 'eng' ? 'Show less' : 'Prikaži manje'}
+              </a>
+            )}
           </div>
           {/* hashtags */}
           <div className="mt-4 flex flex-wrap gap-2">
@@ -71,10 +92,8 @@ function ProjectCard({
             ))}
           </div>
         </article>
-        {/* </div> */}
       </Tilt>
     </div>
-    // {/* </motion.div> */}
   );
 }
 
