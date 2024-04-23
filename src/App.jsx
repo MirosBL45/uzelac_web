@@ -11,11 +11,15 @@ import {
   Works,
   StarsCanvas,
 } from './components';
-import React, { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Footer from './components/Footer';
 
 function App() {
-  const [language, setLanguage] = useState('eng');
+  const [language, setLanguage] = useState('en');
+
+  useEffect(() => {
+    document.documentElement.lang = language;
+  }, [language]);
 
   return (
     <BrowserRouter>

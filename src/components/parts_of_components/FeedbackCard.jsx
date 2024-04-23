@@ -40,7 +40,7 @@ function FeedbackCard({
                 onClick={toggleText}
                 className="text-readMore underline cursor-pointer inline-block pt-[15px] pr-[15px] pb-[15px] text-[13px] xs:text-[15px]"
               >
-                {language === 'eng' ? 'Read more' : 'Opširnije'}
+                {language === 'en' ? 'Read more' : 'Opširnije'}
               </a>
             )}
             {showFullText && (
@@ -49,7 +49,7 @@ function FeedbackCard({
                 onClick={toggleText}
                 className="text-readMore underline cursor-pointer inline-block pt-[15px] pr-[15px] pb-[15px] text-[13px] xs:text-[15px]"
               >
-                {language === 'eng' ? 'Show less' : 'Prikaži manje'}
+                {language === 'en' ? 'Show less' : 'Prikaži manje'}
               </a>
             )}
           </div>
@@ -59,7 +59,7 @@ function FeedbackCard({
                 <span className="blue-text-gradient">@</span> {name}
               </p>
               <p className="mt-1 text-secondary text-[12px]">
-                {designation} {language === 'eng' ? 'in' : 'u'} {company}
+                {designation} {language === 'en' ? 'in' : 'u'} {company}
               </p>
             </div>
             <img

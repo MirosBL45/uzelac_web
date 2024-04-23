@@ -39,7 +39,7 @@ function ProjectCard({
                   href={source_code_link}
                   target="_blank"
                   title={
-                    language === 'eng'
+                    language === 'en'
                       ? 'View this project on the web'
                       : 'Pogledaj ovaj projekat na webu'
                   }
@@ -51,7 +51,7 @@ function ProjectCard({
                     className="object-contain h-1/2"
                   />
                   <span className="text-[12px]">
-                    {language === 'eng' ? ' See Live' : ' Vidi Uživo'}
+                    {language === 'en' ? ' See Live' : ' Vidi Uživo'}
                   </span>
                 </a>
               </div>
@@ -70,7 +70,7 @@ function ProjectCard({
                 onClick={toggleText}
                 className="text-readMore underline cursor-pointer inline-block pt-[15px] pr-[15px] pb-[15px] text-[13px] xs:text-[15px]"
               >
-                {language === 'eng' ? 'Read more' : 'Opširnije'}
+                {language === 'en' ? 'Read more' : 'Opširnije'}
               </a>
             )}
             {showFullText && (
@@ -79,7 +79,7 @@ function ProjectCard({
                 onClick={toggleText}
                 className="text-readMore underline cursor-pointer inline-block pt-[15px] pr-[15px] pb-[15px] text-[13px] xs:text-[15px]"
               >
-                {language === 'eng' ? 'Show less' : 'Prikaži manje'}
+                {language === 'en' ? 'Show less' : 'Prikaži manje'}
               </a>
             )}
           </div>

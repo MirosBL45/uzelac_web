@@ -3,7 +3,7 @@ import { SectionWrapper } from '../hoc';
 function Footer({ language }) {
   return (
     <div>
-      {language === 'eng' ? (
+      {language === 'en' ? (
         <p className="text-secondary text-center sm:text-[17px] xs:text-[15px] text-[13px]">
           Made with <span className="text-red-700">&#9829;</span> by{' '}
           <a

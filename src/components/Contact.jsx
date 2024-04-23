@@ -24,7 +24,7 @@ function Contact({ language }) {
       .sendForm(SERVICE_BASE, TEMPLATE_BASE, formRef.current, PUBLIC_BASE)
       .then(
         () => {
-          if (language === 'eng') {
+          if (language === 'en') {
             setTextPopUp(
               'Thank you. I will get back to you as soon as possible.'
             );
@@ -35,7 +35,7 @@ function Contact({ language }) {
           setShowPopUp(true);
         },
         (error) => {
-          if (language === 'eng') {
+          if (language === 'en') {
             setTextPopUp('Somthing went wrong. Please, try again.');
           } else {
             setTextPopUp('Nešto ne radi. Molimo probajte ponovo.');
@@ -52,7 +52,7 @@ function Contact({ language }) {
     <>
       <div
         title={
-          language === 'eng'
+          language === 'en'
             ? 'Contact Uzelac Light'
             : 'Kontaktiraj Uzelac Light'
         }
@@ -63,10 +63,10 @@ function Contact({ language }) {
           className="flex-[0.75] bg-black-100 p-8 rounded-2xl"
         >
           <p className={styles.sectionSubText}>
-            {language === 'eng' ? 'Get in touch' : 'Budimo u kontaktu'}
+            {language === 'en' ? 'Get in touch' : 'Budimo u kontaktu'}
           </p>
           <h3 className={styles.sectionHeadText}>
-            {language === 'eng' ? 'Contact' : 'Kontakt'}.
+            {language === 'en' ? 'Contact' : 'Kontakt'}.
           </h3>
           {/* form for contact */}
           <form
@@ -76,28 +76,28 @@ function Contact({ language }) {
           >
             <label className="flex flex-col">
               <span className="text-white font-medium mb-4">
-                {language === 'eng' ? 'Your Name' : 'Vaše Ime'}
+                {language === 'en' ? 'Your Name' : 'Vaše Ime'}
               </span>
               <input
                 required
                 type="text"
                 name="user_name"
                 placeholder={
-                  language === 'eng' ? 'Full Name?' : 'Vaše ime i prezime?'
+                  language === 'en' ? 'Full Name?' : 'Vaše ime i prezime?'
                 }
                 className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
               />
             </label>
             <label className="flex flex-col">
               <span className="text-white font-medium mb-4">
-                {language === 'eng' ? 'Your Email' : 'Vaš Email'}
+                {language === 'en' ? 'Your Email' : 'Vaš Email'}
               </span>
               <input
                 required
                 type="email"
                 name="user_email"
                 placeholder={
-                  language === 'eng'
+                  language === 'en'
                     ? "What's your email?"
                     : 'Koji je Vaš email?'
                 }
@@ -106,28 +106,28 @@ function Contact({ language }) {
             </label>
             <label className="flex flex-col">
               <span className="text-white font-medium mb-4">
-                {language === 'eng' ? 'Subject' : 'Naslov'}
+                {language === 'en' ? 'Subject' : 'Naslov'}
               </span>
               <input
                 required
                 type="text"
                 name="subject"
                 placeholder={
-                  language === 'eng' ? "What's the subject?" : 'Koja je tema?'
+                  language === 'en' ? "What's the subject?" : 'Koja je tema?'
                 }
                 className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
               />
             </label>
             <label className="flex flex-col">
               <span className="text-white font-medium mb-4">
-                {language === 'eng' ? 'Your Message' : 'Vaša Poruka'}
+                {language === 'en' ? 'Your Message' : 'Vaša Poruka'}
               </span>
               <textarea
                 required
                 rows={3}
                 name="message"
                 placeholder={
-                  language === 'eng'
+                  language === 'en'
                     ? 'What do you want to say?'
                     : 'Šta želite da kažete?'
                 }
@@ -136,12 +136,12 @@ function Contact({ language }) {
             </label>
             <button
               title={
-                language === 'eng' ? 'Send this message' : 'Pošalji ovu poruku'
+                language === 'en' ? 'Send this message' : 'Pošalji ovu poruku'
               }
               type="submit"
               className="bg-purpleBtn py-3 px-8 outline-none w-fit text-white font-bold shadow-md shadow-primary rounded-xl hover:bg-readMore transition-colors duration-300"
             >
-              {language === 'eng'
+              {language === 'en'
                 ? loading
                   ? 'Sending...'
                   : 'Send'

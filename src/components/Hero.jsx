@@ -18,15 +18,15 @@ function Hero({ language }) {
         {/* text with description about that specific man */}
         <header>
           <h1 className={`${styles.heroHeadText} text-white`}>
-            {language === 'eng' ? 'I am' : 'Ja sam'}{' '}
+            {language === 'en' ? 'I am' : 'Ja sam'}{' '}
             <span className="text-[#915eff]">Uzelac</span>
           </h1>
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-            {language === 'eng'
+            {language === 'en'
               ? 'I transform MOMENTS through dynamic LIGHTING,'
               : 'Transformišem TRENUTKE kroz dinamičko OSVETLJENJE,'}
             <br className="sm:block hidden" />
-            {language === 'eng'
+            {language === 'en'
               ? ' impressive SOUND, and VISUAL artistry'
               : ' impresivan ZVUK i VIZUELNU umetnost'}
           </p>

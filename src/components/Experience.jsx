@@ -15,18 +15,18 @@ function Experience({ language }) {
       {/* headlines */}
       <motion.div variants={textVariant()}>
         <p className={styles.sectionSubText}>
-          {language === 'eng'
+          {language === 'en'
             ? 'What I have done so far'
             : 'Ono što sam do sada uradio'}
         </p>
         <h2 className={styles.sectionHeadText}>
-          {language === 'eng' ? 'Work Experience' : 'Mojih Ruku Delo'}.
+          {language === 'en' ? 'Work Experience' : 'Mojih Ruku Delo'}.
         </h2>
       </motion.div>
       {/* cards of experiences, ExpirienceCard is imported up */}
       <div className="mt-20 flex flex-col">
         <VerticalTimeline>
-          {language === 'eng'
+          {language === 'en'
             ? experiences
                 .slice()
                 .reverse()

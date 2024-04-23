@@ -14,17 +14,17 @@ function Feedbacks({ language }) {
       >
         <motion.div variants={textVariant()}>
           <p className={styles.sectionSubText}>
-            {language === 'eng'
+            {language === 'en'
               ? 'What others say about me'
               : 'Šta drugi kažu o meni'}
           </p>
           <h2 className={styles.sectionHeadText}>
-            {language === 'eng' ? 'Testimonials' : 'Preporuke'}.
+            {language === 'en' ? 'Testimonials' : 'Preporuke'}.
           </h2>
         </motion.div>
       </div>
       <div className={`px-5 -mt-20 pb-14 flex flex-wrap gap-[25px]`}>
-        {language === 'eng'
+        {language === 'en'
           ? testimonials.map((testimonial, index) => (
               <FeedbackCard
                 language={language}

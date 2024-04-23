@@ -36,7 +36,7 @@ function Navbar({ setLanguage, language }) {
         </Link>
         {/* list of links on page */}
         <ul className="list-none hidden sm:flex flex-row gap-10">
-          {language === 'eng'
+          {language === 'en'
             ? navLinks.map((link) => (
                 <li
                   onClick={() => setActive(link.title)}
@@ -74,16 +74,16 @@ function Navbar({ setLanguage, language }) {
           <img
             className="cursor-pointer"
             onClick={() => {
-              if (language === 'eng') {
-                setLanguage('srb');
+              if (language === 'en') {
+                setLanguage('sr');
               } else {
-                setLanguage('eng');
+                setLanguage('en');
               }
             }}
-            src={language === 'eng' ? iconSr : iconEn}
-            alt={language === 'eng' ? 'SRB' : 'ENG'}
+            src={language === 'en' ? iconSr : iconEn}
+            alt={language === 'en' ? 'SRB' : 'ENG'}
             title={
-              language === 'eng'
+              language === 'en'
                 ? 'Prevedi na srpski'
                 : 'Translation into English'
             }
@@ -107,7 +107,7 @@ function Navbar({ setLanguage, language }) {
             } p-6 black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[240px] z-10 rounded-xl`}
           >
             <ul className="list-none flex justify-end items-start flex-col gap-6">
-              {language === 'eng'
+              {language === 'en'
                 ? navLinks.map((link) => (
                     <li
                       onClick={() => {
@@ -148,16 +148,16 @@ function Navbar({ setLanguage, language }) {
                 className="cursor-pointer"
                 onClick={() => {
                   setToggle(false);
-                  if (language === 'eng') {
+                  if (language === 'en') {
                     setLanguage('srb');
                   } else {
                     setLanguage('eng');
                   }
                 }}
-                src={language === 'eng' ? iconSr : iconEn}
-                alt={language === 'eng' ? 'SRB' : 'ENG'}
+                src={language === 'en' ? iconSr : iconEn}
+                alt={language === 'en' ? 'SRB' : 'ENG'}
                 title={
-                  language === 'eng'
+                  language === 'en'
                     ? 'Prevedi na srpski'
                     : 'Translation into English'
                 }
