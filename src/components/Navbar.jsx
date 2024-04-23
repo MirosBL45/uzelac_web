@@ -43,7 +43,7 @@ function Navbar({ setLanguage, language }) {
                   key={link.id}
                   className={`${
                     link.id === 'contact'
-                      ? 'bg-[#915eff] rounded-2xl px-5 py-2'
+                      ? 'bg-purpleBtn rounded-2xl px-5 py-2 hover:bg-readMore transition-colors duration-300'
                       : ''
                   } ${
                     active === link.title

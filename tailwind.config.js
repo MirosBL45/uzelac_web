@@ -10,6 +10,7 @@ module.exports = {
         tertiary: "#151f4e",
         readMore: "#0CCCFB",
         description: '#F5F5F7',
+        purpleBtn: '#915eff',
         link: '#eae9f0',
         "black-100": "#100d25",
         "black-200": "#090325",
