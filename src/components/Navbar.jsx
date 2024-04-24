@@ -99,6 +99,8 @@ function Navbar({ setLanguage, language }) {
               src={toggle ? close : menu}
               alt="menu"
               className="object-contain"
+              width={20}
+              height={20}
             />
           </div>
           <div
