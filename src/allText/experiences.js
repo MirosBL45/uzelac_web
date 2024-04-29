@@ -48,7 +48,7 @@ export const experiences = [
             "Providing expert advice on the types of lighting solutions that would suit the specific requirements of an event or space.",
             "Organization and supervision of the installation of lighting equipment on site.",
             "Adjusting and configuring lights to achieve the desired effect.",
-            "Organization of the work of the team of lighting technicians.",
+            "Managing the lighting crew.",
         ],
     },
 ];
