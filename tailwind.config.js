@@ -21,6 +21,7 @@ module.exports = {
       },
       screens: {
         xs: "400px",
+        mdms: '550px'
       },
       backgroundImage: {
         "hero-pattern": "url('/src/assets/herobg.webp')",
