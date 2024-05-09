@@ -7,10 +7,11 @@ function Footer({ language }) {
         <p className="text-secondary text-center sm:text-[17px] xs:text-[15px] text-[13px]">
           Made with <span className="text-red-700">&#9829;</span> by{' '}
           <a
-            aria-label="Send mail to jovicmiroslav88@gmail.com"
-            title="jovicmiroslav88@gmail.com"
+            aria-label="Visit Miroslav Jovic on the web"
+            title="Visit Miroslav Jovic on the web"
             className="text-[#915eff] hover:text-[hsl(259,100%,75%)]"
-            href="mailto:jovicmiroslav88@gmail.com"
+            href="https://miroslavjovic.com"
+            target={'_blank'}
           >
             Miroslav Jovic
           </a>
@@ -25,7 +26,7 @@ function Footer({ language }) {
           </a>{' '}
           or check out my{' '}
           <a
-            aria-label="Visit Jovic Miroslav GitHub"
+            aria-label={'Visit Jovic Miroslav`s GitHub'}
             className="text-[#915eff] hover:text-[hsl(259,100%,75%)]"
             target="_blank"
             href="https://github.com/MirosBL45"
@@ -38,10 +39,11 @@ function Footer({ language }) {
         <p className="text-secondary text-center sm:text-[17px] xs:text-[15px] text-[13px]">
           Napravio od <span className="text-red-700">&#9829;</span>{' '}
           <a
-            aria-label="Javi se na jovicmiroslav88@gmail.com"
-            title="jovicmiroslav88@gmail.com"
+            aria-label="Posetite Jović Miroslava na vebu"
+            title="Posetite Jović Miroslava na vebu"
             className="text-[#915eff] hover:text-[hsl(259,100%,75%)]"
-            href="mailto:jovicmiroslav88@gmail.com"
+            href="https://miroslavjovic.com"
+            target={'_blank'}
           >
             Miroslav Jović
           </a>
