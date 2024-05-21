@@ -13,6 +13,7 @@ import {
 } from './components';
 import { useState, useEffect } from 'react';
 import Footer from './components/Footer';
+import ButtonHidden from './components/ButtonHidden';
 
 function App() {
   const [language, setLanguage] = useState('en');
@@ -38,6 +39,7 @@ function App() {
           <StarsCanvas />
           <Footer language={language} />
         </div>
+        {/* <ButtonHidden language={language} /> */}
       </div>
     </BrowserRouter>
   );

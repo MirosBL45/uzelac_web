@@ -153,7 +153,7 @@ function Navbar({ setLanguage, language }) {
                   if (language === 'en') {
                     setLanguage('srb');
                   } else {
-                    setLanguage('eng');
+                    setLanguage('en');
                   }
                 }}
                 src={language === 'en' ? iconSr : iconEn}
