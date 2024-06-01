@@ -39,7 +39,7 @@ function App() {
           <StarsCanvas />
           <Footer language={language} />
         </div>
-        {/* <ButtonHidden language={language} /> */}
+        <ButtonHidden language={language} />
       </div>
     </BrowserRouter>
   );
