@@ -1,14 +1,33 @@
-This ReactJS-Vite project includes:
+## Project: Lighting and Laser Show Application
 
-Vite - next-generation, front-end tool that focuses on speed and performance
+This project was developed for a company that provides lighting and laser shows for various events, such as concerts and outdoor parties for up to 5000 people. The application was built using the following technologies and tools:
 
-ThreeJS - a powerful 3D graphics library for rendering and animating the 3D model
+### 1. **Framework and Core**
 
-React Three Fiber - a popular library for creating 3D graphics with ThreeJS in React
+- **ReactJS-Vite**: Provides a fast and modern development environment for building React applications with improved performance and development experience.
 
-TailwindCSS - a popular utility-first CSS styling framework
+### 2. **3D Graphics and Animation**
 
-Framer Motion - the most popular library used to bring your React website to life with animations
+- **ThreeJS**: A powerful 3D graphics library that enables the creation of complex 3D scenes and visual effects.
+- **React Three Fiber**: A React renderer for ThreeJS, allowing the creation and manipulation of 3D graphics within a React application.
+
+### 3. **Styling**
+
+- **TailwindCSS**: A utility-first CSS framework that provides a highly customizable and responsive design system for styling the application.
+
+### 4. **Animations and Motion**
+
+- **Framer Motion**: A library for creating smooth and complex animations, providing an enhanced user experience with dynamic motion.
+
+### 5. **Email Services**
+
+- **emailjs**: A library used to send emails directly from the client-side application, enabling easy and efficient email communication.
+
+### 6. **Interactive Components**
+
+- **react-tilt**: A library for creating interactive tilt effects on elements, enhancing the visual appeal and user interaction.
+
+Each of these technologies plays a crucial role in delivering a modern, dynamic, and visually impressive application tailored for large-scale events.
 
 For start project:
 
