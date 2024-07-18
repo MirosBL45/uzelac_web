@@ -15,7 +15,7 @@ function HiddenPopUp({ setShowHidden, language }) {
         />
         <p className="text-description mt-2 text-[15px] xs:text-[16px] w-[350px] xs:w-[408px] px-4 xs:px-0 text-center">
           {language === 'en'
-            ? 'In addition to the above-mentioned works, it should also be noted that he was engaged in a strip bar, but to this day, the author of this project does not know what Uzelac really did in that branch.'
+            ? 'In addition to the above-mentioned works, it should also be noted that Uzelac was engaged in a strip bar, but to this day, the author of this project does not know what he really did in that branch.'
             : 'Pored gore navedenih radova, treba napomenuti i angažovanje u striptiz baru, ali do dan danas, autoru ovog projekta nije poznato čime se to Uzelac zaista bavio u toj branši.'}
         </p>
         <button
