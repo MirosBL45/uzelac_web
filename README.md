@@ -29,7 +29,7 @@ This project was developed for a company that provides lighting and laser shows 
 
 Each of these technologies plays a crucial role in delivering a modern, dynamic, and visually impressive application tailored for large-scale events.
 
-For start project:
+To start this project:
 
 1. npm install
 2. npm run dev
