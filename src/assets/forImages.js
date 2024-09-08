@@ -43,6 +43,8 @@ import expo from "./projects/expo.jpg";
 import arena from "./projects/arena.jpg";
 import mac from "./projects/mac.jpg";
 import mileva from "./projects/mileva.jpg";
+import rts from "./projects/rts.webp";
+
 import scandal from "./projects/scandal.webp";
 
 
@@ -85,5 +87,6 @@ export {
   arena,
   mac,
   mileva,
+  rts,
   scandal
 };

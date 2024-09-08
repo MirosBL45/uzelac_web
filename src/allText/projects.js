@@ -5,6 +5,7 @@ import {
     arena,
     mac,
     mileva,
+    rts,
 } from "../assets/forImages";
 
 export const projects = [
@@ -122,6 +123,19 @@ export const projects = [
         image: mileva,
         source_code_link: "https://www.imdb.com/title/tt13729210/",
     },
+    {
+        name: "Serbian Broadcasting Corporation",
+        description:
+            "Radio Television of Serbia (RTS) is the national public broadcaster of Serbia. RTS provides informative, cultural, educational, and entertainment programming for all citizens of Serbia. Founded in 1929, RTS is one of the oldest media organizations in the Balkans. RTS broadcasts content via radio, television, and digital platforms. I am responsible for setting up and managing lighting systems during the filming of entertainment programs, adapting them to the specifics of each scene. Through creative approaches, I have been able to enhance the lighting style throughout the duration of the production.",
+        tags: [
+            {
+                name: "lighting",
+                color: "blue-text-gradient",
+            },
+        ],
+        image: rts,
+        source_code_link: "https://www.rts.rs/sr/index.html",
+    },
 ];
 
 export const projectsSR = [
@@ -238,5 +252,18 @@ export const projectsSR = [
         ],
         image: mileva,
         source_code_link: "https://www.imdb.com/title/tt13729210/",
+    },
+    {
+        name: "Radio Televizija Srbije",
+        description:
+            "Radio Televizija Srbije (RTS) je nacionalni javni servis Srbije. RTS pruža informativni, kulturni, obrazovni i zabavni program za sve građane Srbije. Osnovan 1929. godine, RTS je jedan od najstarijih medija na Balkanu. RTS emituje sadržaje putem radija, televizije i digitalnih platformi. Odgovoran sam za postavljanje i upravljanje rasvetnim sistemima tokom snimanja zabavnih programa, prilagođavajući ih specifičnostima svake scene. Kroz kreativne pristupe, uspeo sam da unapredim stil osvetljenja tokom trajanja produkcije.",
+        tags: [
+            {
+                name: "lighting",
+                color: "blue-text-gradient",
+            },
+        ],
+        image: rts,
+        source_code_link: "https://www.rts.rs/sr/index.html",
     },
 ];
